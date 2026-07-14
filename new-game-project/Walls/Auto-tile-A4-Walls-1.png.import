@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l47tbengu1u5"
-path="res://.godot/imported/spritesheet_hospital_maternity.png-9fe1a3f51cc30094208505975d680b8a.ctex"
+uid="uid://dwwxeu5a7msph"
+path="res://.godot/imported/Auto-tile-A4-Walls-1.png-e225857c15c56c8b0b7fac6c50852e27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritesheet_hospital_maternity.png"
-dest_files=["res://.godot/imported/spritesheet_hospital_maternity.png-9fe1a3f51cc30094208505975d680b8a.ctex"]
+source_file="res://Walls/Auto-tile-A4-Walls-1.png"
+dest_files=["res://.godot/imported/Auto-tile-A4-Walls-1.png-e225857c15c56c8b0b7fac6c50852e27.ctex"]
 
 [params]
 

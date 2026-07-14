@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkc1alhnmhia3"
-path="res://.godot/imported/tile-B-05.png-8552420867ec5a75fa710d07307835ce.ctex"
+uid="uid://l47tbengu1u5"
+path="res://.godot/imported/spritesheet_hospital_maternity.png-627c058b738ae337d646503fe1c2b6bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tile-B-05.png"
-dest_files=["res://.godot/imported/tile-B-05.png-8552420867ec5a75fa710d07307835ce.ctex"]
+source_file="res://Free Assets/spritesheet_hospital_maternity.png"
+dest_files=["res://.godot/imported/spritesheet_hospital_maternity.png-627c058b738ae337d646503fe1c2b6bf.ctex"]
 
 [params]
 

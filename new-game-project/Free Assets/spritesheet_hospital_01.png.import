@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bluoauhh5pu6h"
-path="res://.godot/imported/tile-B-02.png-19614aac35194233da1e020e1feee4de.ctex"
+uid="uid://bnhxf08qgd73x"
+path="res://.godot/imported/spritesheet_hospital_01.png-3dea0e8a2e079c7a38637fa976c765d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tile-B-02.png"
-dest_files=["res://.godot/imported/tile-B-02.png-19614aac35194233da1e020e1feee4de.ctex"]
+source_file="res://Free Assets/spritesheet_hospital_01.png"
+dest_files=["res://.godot/imported/spritesheet_hospital_01.png-3dea0e8a2e079c7a38637fa976c765d5.ctex"]
 
 [params]
 
