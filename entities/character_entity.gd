@@ -137,7 +137,7 @@ func _update_animation():
 
 ##internal - Checks if the entity is inside an area that it is considered a falling zone.
 func _check_falling():
-	if not is_falling and not is_jumping and fall_detector.is_colliding() and on_fall:
+	if not is_falling and not is_jumping and fall_detector != null and fall_detector.is_colliding() and on_fall:
 		enable_state(on_fall)
 
 ## Used to load entity data (from a save file).
@@ -199,10 +199,11 @@ func end_jump():
 
 ##Starts an attack.
 func attack():
-	if !weapon or is_attacking or is_jumping or attack_cooldown_timer.time_left > 0:
+	if !weapon or is_attacking or is_jumping or (attack_cooldown_timer != null and attack_cooldown_timer.time_left > 0):
 		return
 	else:
-		attack_cooldown_timer.start(weapon.speed)
+		if attack_cooldown_timer != null:
+			attack_cooldown_timer.start(weapon.speed)
 		if on_attack:
 			enable_state(on_attack)
 
@@ -229,7 +230,12 @@ func return_to_safe_position():
 		global_position = safe_position
 
 func enable_state(state: State):
-	if state and health_controller.hp > 0:
+	if not state:
+		return
+	if health_controller == null:
+		push_warning("%s attempted to enable state %s without a HealthController." % [name, state.name])
+		return
+	if health_controller.hp > 0:
 		state.enable()
 
 ##Stops the entity, setting its velocity to 0.

@@ -10,6 +10,9 @@ var destination_name: String ## Used when moving between levels to get the right
 var player_id: int ## Used when moving between levels to save the player facing direction.
 
 func init_scene():
+	if DataManager == null:
+		push_warning("Level %s could not initialize because DataManager is unavailable." % name)
+		return
 	DataManager.load_level_data()
 
 ##internal - Used by SceneManager to pass data between levels.
@@ -23,12 +26,16 @@ func get_data():
 
 ##internal - Used by SceneManager to get data from the outgoing level.
 func receive_data(data):
-	if data.destination_name:
+	if data == null:
+		return
+	if data.has("destination_name") and data.destination_name:
 		destination_name = data.destination_name
-	if data.player_id:
+	if data.has("player_id") and data.player_id:
 		player_id = data.player_id
 
 func clear_tilemap_layers():
+	if tilemap_layers == null:
+		return
 	for node in tilemap_layers.get_children():
 		if node is TileMapLayer:
 			node.clear()

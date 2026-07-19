@@ -27,11 +27,18 @@ func _check_continue():
 
 func _on_new_game_button_up() -> void:
 	DataManager.reset_file_data()
+	if start_level.is_empty():
+		push_warning("No start level configured for the new game.")
+		return
 	SceneManager.swap_scenes(start_level, get_tree().root, self, Const.TRANSITION.FADE_TO_WHITE)
 
 func _on_continue_button_up() -> void:
 	DataManager.load_file_data()
-	var level_to_load = DataManager.get_file_data().game_data.level
+	var save_data = DataManager.get_file_data()
+	if save_data == null or save_data.game_data == null or save_data.game_data.level.is_empty():
+		push_warning("No valid save data available to continue.")
+		return
+	var level_to_load = save_data.game_data.level
 	SceneManager.swap_scenes(level_to_load, get_tree().root, self, Const.TRANSITION.FADE_TO_WHITE)
 
 func _on_settings_button_up() -> void:

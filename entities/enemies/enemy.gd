@@ -20,10 +20,10 @@ func _ready():
 
 func _process(delta):
 	super._process(delta)
-	if health_controller.hp <= 0:
+	if health_controller == null or health_controller.hp <= 0:
 		return
-		
-	if not player_ref or player_ref.health_controller.hp <= 0:
+
+	if not is_instance_valid(player_ref) or player_ref.health_controller == null or player_ref.health_controller.hp <= 0:
 		_wander_behavior(delta)
 		return
 		

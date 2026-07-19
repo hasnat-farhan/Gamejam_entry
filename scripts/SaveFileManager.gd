@@ -7,7 +7,9 @@ class_name SaveFileManager
 @export var game_data: DataGame = null
 
 func write_save_file() -> void:
-	ResourceSaver.save(self, get_save_file_path())
+	var result := ResourceSaver.save(self, get_save_file_path())
+	if result != OK:
+		push_warning("Failed to save game data with result: %s" % result)
 
 static func save_file_exists() -> bool:
 	return ResourceLoader.exists(get_save_file_path())
@@ -15,7 +17,10 @@ static func save_file_exists() -> bool:
 static func load_save_file() -> Resource:
 	var save_path := get_save_file_path()
 	if ResourceLoader.exists(save_path):
-		return ResourceLoader.load(save_path, "", ResourceLoader.CACHE_MODE_REPLACE)
+		var loaded := ResourceLoader.load(save_path, "", ResourceLoader.CACHE_MODE_REPLACE)
+		if loaded is SaveFileManager:
+			return loaded
+		push_warning("Saved game file is invalid or incompatible: %s" % save_path)
 	return SaveFileManager.new()
 
 static func get_save_file_path() -> String:

@@ -12,12 +12,16 @@ var equipped = 0 ## The id of the weapon equipped by the player.
 
 func _ready():
 	super._ready()
-	Globals.transfer_start.connect(func(): 
-		on_transfer_start.enable()
-	)
-	Globals.transfer_complete.connect(func(): on_transfer_end.enable())
+	if on_transfer_start:
+		Globals.transfer_start.connect(func(): 
+			on_transfer_start.enable()
+		)
+	if on_transfer_end:
+		Globals.transfer_complete.connect(func(): on_transfer_end.enable())
 	Globals.destination_found.connect(func(destination_path): _move_to_destination(destination_path))
-	receive_data(DataManager.get_player_data(player_id))
+	var saved_data = DataManager.get_player_data(player_id)
+	if saved_data != null:
+		receive_data(saved_data)
 
 ##Get the player data to save.
 func get_data():
@@ -27,8 +31,9 @@ func get_data():
 		data = player_data
 	data.position = position
 	data.facing = facing
-	data.hp = health_controller.hp
-	data.max_hp = health_controller.max_hp
+	if health_controller:
+		data.hp = health_controller.hp
+		data.max_hp = health_controller.max_hp
 	data.inventory = inventory.items if inventory else []
 	data.equipped = equipped
 	return data
@@ -38,17 +43,18 @@ func receive_data(data):
 	if data:
 		global_position = data.position
 		facing = data.facing
-		health_controller.hp = data.hp
-		health_controller.max_hp = data.max_hp
+		if health_controller:
+			health_controller.hp = data.hp
+			health_controller.max_hp = data.max_hp
 		if inventory:
 			inventory.items = data.inventory
 		equipped = data.equipped
 
 func _move_to_destination(destination_path: String):
-	if !destination_path:
+	if destination_path.is_empty():
 		return
-	var destination = get_tree().root.get_node(destination_path)
-	if !destination:
+	var destination = get_tree().root.get_node_or_null(destination_path)
+	if destination == null:
 		return
 	var direction = facing
 	if destination is Transfer and destination.direction:

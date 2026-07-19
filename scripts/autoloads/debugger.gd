@@ -36,12 +36,17 @@ func _set_player_ghost():
 
 func _toggle_screen_view():
 	for player: PlayerEntity in Globals.get_players():
+		if not is_instance_valid(player):
+			continue
 		player.visible = !player.visible
-		player.health_controller.hp_bar.visible = player.visible
+		if player.health_controller != null and player.health_controller.hp_bar != null:
+			player.health_controller.hp_bar.visible = player.visible
 
 ## Fully restore players health.
 func _restore_player_health():
 	for player: PlayerEntity in Globals.get_players():
+		if not is_instance_valid(player) or player.health_controller == null:
+			continue
 		player.health_controller.change_hp(player.health_controller.max_hp - player.health_controller.hp)
 
 ## Set players velocity to zero.
