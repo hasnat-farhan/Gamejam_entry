@@ -1,0 +1,6 @@
+[gd_scene format=4 uid="uid://f81de8b1bb7a45ae"]
+[ext_resource type="Texture2D" uid="uid://b04f6c909d6d4f92" path="res://assets/adeeb_assets/Props.png" id="1"]
+
+[node name="props" type="Node2D"]
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1")

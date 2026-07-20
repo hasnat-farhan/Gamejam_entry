@@ -1,0 +1,5 @@
+[gd_scene format=4 uid="uid://8c0c1f0f9ac34bcd"]
+[ext_resource type="Script" uid="uid://23ade0f416e24d91" path="res://scripts/adeeb_assets_loader.gd" id="1"]
+
+[node name="adeeb_assets_root" type="Node2D"]
+script = ExtResource("1")

@@ -1,0 +1,7 @@
+[gd_scene format=4 uid="uid://0baa486fd09247e0"]
+[ext_resource type="AudioStream" uid="uid://a0dfb64fcfd84b06" path="res://assets/adeeb_assets/shopkeeper/purchase.wav" id="1"]
+
+[node name="purchase_sound" type="Node2D"]
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1")
+autoplay = false

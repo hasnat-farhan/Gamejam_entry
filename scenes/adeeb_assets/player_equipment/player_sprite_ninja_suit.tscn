@@ -1,0 +1,131 @@
+[gd_scene format=4 uid="uid://2325425add4b4c9f"]
+[ext_resource type="Texture2D" uid="uid://eb4ef95af79c4831" path="res://assets/adeeb_assets/player_equipment/player_sprite_ninja_suit.png" id="1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2"]
+atlas = ExtResource("1")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3"]
+atlas = ExtResource("1")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4"]
+atlas = ExtResource("1")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5"]
+atlas = ExtResource("1")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6"]
+atlas = ExtResource("1")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7"]
+atlas = ExtResource("1")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8"]
+atlas = ExtResource("1")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_9"]
+atlas = ExtResource("1")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10"]
+atlas = ExtResource("1")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11"]
+atlas = ExtResource("1")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12"]
+atlas = ExtResource("1")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13"]
+atlas = ExtResource("1")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14"]
+atlas = ExtResource("1")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15"]
+atlas = ExtResource("1")
+region = Rect2(768, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16"]
+atlas = ExtResource("1")
+region = Rect2(896, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17"]
+atlas = ExtResource("1")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18"]
+atlas = ExtResource("1")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_19"]
+atlas = ExtResource("1")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_20"]
+atlas = ExtResource("1")
+region = Rect2(384, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21"]
+atlas = ExtResource("1")
+region = Rect2(512, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_22"]
+atlas = ExtResource("1")
+region = Rect2(640, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_1"]
+resource_local_to_scene = true
+animations = [{
+"frames": [
+{"duration": 0.125,"texture": SubResource("AtlasTexture_1")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_2")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_3")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_4")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_5")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_6")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_7")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_8")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_9")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_10")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_11")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_12")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_13")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_14")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_15")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_16")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_17")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_18")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_19")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_20")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_21")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_22")},
+{"duration": 0.125,"texture": SubResource("AtlasTexture_23")}
+],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+atlas = ExtResource("1")
+region = Rect2(768, 256, 128, 128)
+
+[node name="player_sprite_ninja_suit" type="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1")
+playing = true

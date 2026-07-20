@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://31ddcd9a65424788"]
+[ext_resource type="Texture2D" uid="uid://bc3ef317e9fa4656" path="res://assets/adeeb_assets/shopkeeper/fishbowl.png" id="1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2"]
+atlas = ExtResource("1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3"]
+atlas = ExtResource("1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4"]
+atlas = ExtResource("1")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5"]
+atlas = ExtResource("1")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6"]
+atlas = ExtResource("1")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7"]
+atlas = ExtResource("1")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8"]
+atlas = ExtResource("1")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_9"]
+atlas = ExtResource("1")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10"]
+atlas = ExtResource("1")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11"]
+atlas = ExtResource("1")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12"]
+atlas = ExtResource("1")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_1"]
+resource_local_to_scene = true
+animations = [{
+"frames": [
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_1")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_2")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_3")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_4")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_5")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_6")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_7")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_8")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_9")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_10")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_11")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_12")},
+{"duration": 0.16666666666666666,"texture": SubResource("AtlasTexture_13")}
+],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+atlas = ExtResource("1")
+region = Rect2(384, 0, 32, 32)
+
+[node name="fishbowl" type="Node2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1")
+playing = true
