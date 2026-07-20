@@ -1215,6 +1215,13 @@ on_enter = Dictionary[String, Variant]({
 "is_hurting": true
 })
 
+[node name="show_game_over" type="Node" parent="StateMachine/death" index="2" node_paths=PackedStringArray("node")]
+script = ExtResource("14_gx6sm")
+node = NodePath("../../..")
+method_name = "_show_game_over"
+send_statemachine_params = false
+delay_start = Vector2(1.5, 2.0)
+
 [node name="Inventory" parent="." index="11" unique_id=531146878 instance=ExtResource("15_gx6sm")]
 visible = false
 
