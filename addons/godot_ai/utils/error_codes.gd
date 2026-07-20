@@ -28,7 +28,7 @@ const INTERNAL_ERROR := "INTERNAL_ERROR"
 const DEFERRED_TIMEOUT := "DEFERRED_TIMEOUT"
 # game_eval failure codes (#490) — keep in sync with protocol/errors.py
 const EVAL_COMPILE_ERROR := "EVAL_COMPILE_ERROR"
-const EVAL_RUNTIME_ERROR := "EVAL_RUNTIME_ERROR"
+const EVAL_runTIME_ERROR := "EVAL_runTIME_ERROR"
 ## #518: the play session is up (EditorInterface.is_playing_scene() is true, so
 ## editor_handler's EDITOR_NOT_READY "game is not running" gate already passed)
 ## but the game-side _mcp_game_helper autoload never registered its debugger
@@ -90,7 +90,7 @@ const MISSING_REQUIRED_PARAM := "MISSING_REQUIRED_PARAM"
 const SUB_EDITOR_IMPORTING := "EDITOR_IMPORTING"
 const SUB_EDITOR_PLAYING := "EDITOR_PLAYING"
 const SUB_EDITOR_NO_SCENE := "EDITOR_NO_SCENE"
-const SUB_EDITOR_GAME_NOT_RUNNING := "EDITOR_GAME_NOT_RUNNING"
+const SUB_EDITOR_GAME_NOT_runNING := "EDITOR_GAME_NOT_runNING"
 const SUB_EDITOR_VIEWPORT_UNAVAILABLE := "EDITOR_VIEWPORT_UNAVAILABLE"
 const SUB_EDITOR_VIEWPORT_NOT_3D := "EDITOR_VIEWPORT_NOT_3D"
 const SUB_EDITOR_VIEWPORT_EMPTY := "EDITOR_VIEWPORT_EMPTY"

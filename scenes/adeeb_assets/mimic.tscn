@@ -1,5 +1,5 @@
 [gd_scene format=4 uid="uid://4c48caaf3e7446bb"]
-[ext_resource type="Texture2D" uid="uid://37701ead767d4403" path="res://assets/adeeb_assets/Mimic Sprite Sheet.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://37701ead767d4403" path="res://assets/adeeb_assets/Mimic_Sprite_Sheet.png" id="1"]
 [sub_resource type="AtlasTexture" id="AtlasTexture_1"]
 atlas = ExtResource("1")
 region = Rect2(0, 0, 32, 32)

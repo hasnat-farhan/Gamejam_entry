@@ -18,8 +18,8 @@ extends VBoxContainer
 ## very state they claim to move.
 ##
 ## A future refactor probably wants extract-by-concern instead — e.g.
-## `utils/mcp_async_refresh_state_machine.gd` owning the IDLE → RUNNING →
-## RUNNING_TIMED_OUT → DEFERRED_FOR_FILESYSTEM → SHUTTING_DOWN transitions
+## `utils/mcp_async_refresh_state_machine.gd` owning the idle → runNING →
+## runNING_TIMED_OUT → DEFERRED_FOR_FILESYSTEM → SHUTTING_DOWN transitions
 ## and pending-flag triplet, `utils/mcp_client_action_dispatcher.gd` owning
 ## the per-row Configure/Remove worker pool. The dock would keep UI
 ## construction and lose the state-machine ownership. See issue #360.
@@ -150,11 +150,11 @@ var _client_status_refresh_thread: Thread
 ## `ClientRefreshStateScript` for the transition table. Replaces the
 ## previously scattered booleans (`_in_flight`, `_timed_out`,
 ## `_deferred_until_filesystem_ready`, `_shutdown_requested`).
-var _refresh_state: int = ClientRefreshStateScript.IDLE
+var _refresh_state: int = ClientRefreshStateScript.idle
 ## Pending-request flags. Kept separate from `_refresh_state` because
 ## they're "what should the next refresh look like" — not state of
 ## any current refresh. A pending request is queued when a refresh
-## arrives during RUNNING / RUNNING_TIMED_OUT and consumed by
+## arrives during runNING / runNING_TIMED_OUT and consumed by
 ## `_apply_client_status_refresh_results` once the in-flight worker
 ## drains. `_pending_force` also captures forced retries deferred via
 ## DEFERRED_FOR_FILESYSTEM so a pending user click survives the wait.
@@ -335,7 +335,7 @@ func _drain_client_status_refresh_workers() -> void:
 	## `McpUpdateManager._install_zip`'s post-drain reset, which writes
 	## the state explicitly.
 	if _refresh_state != ClientRefreshStateScript.SHUTTING_DOWN:
-		_refresh_state = ClientRefreshStateScript.IDLE
+		_refresh_state = ClientRefreshStateScript.idle
 	_client_status_refresh_pending = false
 	_client_status_refresh_pending_force = false
 	_client_status_refresh_pending_initial = false
@@ -692,7 +692,7 @@ func _build_ui() -> void:
 	_clients_summary_label = Label.new()
 	_clients_summary_label.add_theme_color_override("font_color", COLOR_MUTED)
 	_clients_summary_label.clip_text = true
-	_clients_summary_label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	_clients_summary_label.text_overrun_behavior = TextServer.OVERrun_TRIM_ELLIPSIS
 	_clients_summary_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	clients_header_row.add_child(_clients_summary_label)
 
@@ -2531,7 +2531,7 @@ func _refresh_clients_summary() -> void:
 	if ClientRefreshStateScript.should_show_checking_badge(_refresh_state):
 		text += (
 			" (checking...)"
-			if _refresh_state != ClientRefreshStateScript.RUNNING_TIMED_OUT
+			if _refresh_state != ClientRefreshStateScript.runNING_TIMED_OUT
 			else " (client probe still running)"
 		)
 	_clients_summary_label.text = text
@@ -2636,9 +2636,9 @@ func _has_client_status_refresh_timed_out() -> bool:
 func _check_client_status_refresh_timeout() -> void:
 	if not _has_client_status_refresh_timed_out():
 		return
-	if _refresh_state == ClientRefreshStateScript.RUNNING_TIMED_OUT:
+	if _refresh_state == ClientRefreshStateScript.runNING_TIMED_OUT:
 		return
-	_refresh_state = ClientRefreshStateScript.RUNNING_TIMED_OUT
+	_refresh_state = ClientRefreshStateScript.runNING_TIMED_OUT
 	_refresh_clients_summary()
 
 
@@ -2652,7 +2652,7 @@ func _abandon_client_status_refresh_thread() -> void:
 		_orphaned_client_status_refresh_threads.append(_client_status_refresh_thread)
 		_client_status_refresh_thread = null
 	if _refresh_state != ClientRefreshStateScript.SHUTTING_DOWN:
-		_refresh_state = ClientRefreshStateScript.IDLE
+		_refresh_state = ClientRefreshStateScript.idle
 	## Reset the full pending-request triplet, not just the
 	## focus-in / cooldown half. A timed-out worker has already
 	## warmed bytecode, so any stale `_pending_initial` from an
@@ -2752,7 +2752,7 @@ func _perform_initial_client_status_refresh() -> void:
 		)
 	)
 	if err != OK:
-		_refresh_state = ClientRefreshStateScript.IDLE
+		_refresh_state = ClientRefreshStateScript.idle
 		_client_status_refresh_thread = null
 		_refresh_clients_summary()
 
@@ -2782,7 +2782,7 @@ func _begin_client_status_refresh_run() -> int:
 	## Generation is bumped here (not at completion) so that a worker result
 	## reaped after `_abandon_client_status_refresh_thread` or `_exit_tree`
 	## fires can be detected as stale via generation mismatch.
-	_refresh_state = ClientRefreshStateScript.RUNNING
+	_refresh_state = ClientRefreshStateScript.runNING
 	_client_status_refresh_pending = false
 	_client_status_refresh_pending_force = false
 	_client_status_refresh_started_msec = Time.get_ticks_msec()
@@ -2797,7 +2797,7 @@ func _finalize_completed_refresh() -> void:
 	## and the no-CLI fast path in `_perform_initial_client_status_refresh`.
 	_last_client_status_refresh_completed_msec = Time.get_ticks_msec()
 	if _refresh_state != ClientRefreshStateScript.SHUTTING_DOWN:
-		_refresh_state = ClientRefreshStateScript.IDLE
+		_refresh_state = ClientRefreshStateScript.idle
 	_refresh_clients_summary()
 
 
@@ -2868,7 +2868,7 @@ func _request_client_status_refresh(force: bool = false) -> bool:
 		Callable(self, "_run_client_status_refresh_worker").bind(client_probes, server_url, generation)
 	)
 	if err != OK:
-		_refresh_state = ClientRefreshStateScript.IDLE
+		_refresh_state = ClientRefreshStateScript.idle
 		_client_status_refresh_thread = null
 		_refresh_clients_summary()
 		return false
@@ -2911,7 +2911,7 @@ func _retry_deferred_client_status_refresh() -> void:
 
 	var initial := _client_status_refresh_pending_initial
 	var force := _client_status_refresh_pending_force
-	_refresh_state = ClientRefreshStateScript.IDLE
+	_refresh_state = ClientRefreshStateScript.idle
 	_client_status_refresh_pending_force = false
 	_client_status_refresh_pending_initial = false
 	if initial:

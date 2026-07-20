@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bl270cr2if8ti"]
+
+[ext_resource type="Script" uid="uid://ddqmytjvo67hy" path="res://fireball_node_adeeb/Projectiles/Projectile.gd" id="1_l04qc"]
+[ext_resource type="Texture2D" uid="uid://blyeq0kgg6oeb" path="res://fireball_node_adeeb/Fireball.png" id="2_15u0a"]
+
+[sub_resource type="Animation" id="Animation_ujmx6"]
+resource_name = "fireball"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cl6ya"]
+_data = {
+&"fireball": SubResource("Animation_ujmx6")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twgw3"]
+
+[node name="Projectile" type="Area2D" unique_id=866013539 groups=["Projectile"]]
+script = ExtResource("1_l04qc")
+ProjSpeed = null
+ProjDamage = null
+ProjKnockback = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=83982354]
+texture = ExtResource("2_15u0a")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=441018973]
+libraries/ = SubResource("AnimationLibrary_cl6ya")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1701960142]
+shape = SubResource("RectangleShape2D_twgw3")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=478807033]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bdupyms4v14m3"]
 
-[ext_resource type="Texture2D" uid="uid://ck16y8rnp5rcb" path="res://assets/adeeb_assets/FREE - Blacksmith 2D Pixel Art/Sprites/BLACKSMITH.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://ck16y8rnp5rcb" path="res://assets/adeeb_assets/blacksmith_pixel_art/Sprites/BLACKSMITH.png" id="1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1"]
 atlas = ExtResource("1")

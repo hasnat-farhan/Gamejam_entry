@@ -6,7 +6,7 @@ const ErrorCodes := preload("res://addons/godot_ai/utils/error_codes.gd")
 ## Handles project settings and filesystem search commands.
 
 const NodeHandler := preload("res://addons/godot_ai/handlers/node_handler.gd")
-const RUN_READY_WAIT_SEC := 3.0
+const run_READY_WAIT_SEC := 3.0
 
 var _connection: McpConnection
 var _debugger_plugin
@@ -187,7 +187,7 @@ static func _run_project_base_data(
 func _run_project_current_liveness_response(base_data: Dictionary) -> Dictionary:
 	if _debugger_plugin == null:
 		return {"data": base_data}
-	var status: Dictionary = _debugger_plugin.get_game_status(-1, RUN_READY_WAIT_SEC)
+	var status: Dictionary = _debugger_plugin.get_game_status(-1, run_READY_WAIT_SEC)
 	## One-shot read — force a Debugger-tab scan so boot errors that landed
 	## after the last gated scan are in this response (#641).
 	var errors_info: Dictionary = _debugger_plugin.recent_editor_errors_since(int(status.get("editor_log_cursor", 0)), true)
@@ -209,14 +209,14 @@ static func _finish_run_project_deferred(
 		await tree.process_frame
 		if not is_instance_valid(connection) or not is_instance_valid(debugger_plugin):
 			return
-		var pre_status: Dictionary = debugger_plugin.get_game_status(-1, RUN_READY_WAIT_SEC)
+		var pre_status: Dictionary = debugger_plugin.get_game_status(-1, run_READY_WAIT_SEC)
 		if (
 			not EditorInterface.is_playing_scene()
 			and int(pre_status.get("elapsed_msec", 0)) > 100
 			and str(pre_status.get("status", "stopped")) == "launching"
 		):
 			debugger_plugin.end_game_run()
-		var status: Dictionary = debugger_plugin.get_game_status(-1, RUN_READY_WAIT_SEC)
+		var status: Dictionary = debugger_plugin.get_game_status(-1, run_READY_WAIT_SEC)
 		var errors_info: Dictionary = debugger_plugin.recent_editor_errors_since(int(status.get("editor_log_cursor", 0)))
 		var decision := _run_project_liveness_decision(status, errors_info)
 		if not bool(decision.get("resolve", false)):
@@ -298,7 +298,7 @@ static func _run_project_liveness_decision(status: Dictionary, errors_info: Dict
 	var truncated := bool(errors_info.get("truncated", false))
 	var correlated_error := not recent_errors.is_empty() and errors_scope == "run"
 	var elapsed_msec := int(status.get("elapsed_msec", 0))
-	var ready_wait_msec := int(status.get("ready_wait_msec", int(RUN_READY_WAIT_SEC * 1000.0)))
+	var ready_wait_msec := int(status.get("ready_wait_msec", int(run_READY_WAIT_SEC * 1000.0)))
 	var decision := {
 		"resolve": false,
 		"game_status": enriched_status,
