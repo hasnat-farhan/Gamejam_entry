@@ -25,12 +25,12 @@ const _ENUM_TABLES := {
 	},
 	"doppler_tracking": {
 		"disabled": Camera3D.DOPPLER_TRACKING_DISABLED,
-		"idle_step": Camera3D.DOPPLER_TRACKING_idle_STEP,
+		"idle_step": Camera3D.DOPPLER_TRACKING_IDLE_STEP,
 		"physics_step": Camera3D.DOPPLER_TRACKING_PHYSICS_STEP,
 	},
 	"process_callback": {
 		"physics": Camera2D.CAMERA2D_PROCESS_PHYSICS,
-		"idle": Camera2D.CAMERA2D_PROCESS_idle,
+		"idle": Camera2D.CAMERA2D_PROCESS_IDLE,
 	},
 }
 
