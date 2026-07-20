@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2cjeofgpw41n"
-path="res://.godot/imported/16x32 Run-Sheet.png-bb329358370d641dc09b6c8f216ffcc9.ctex"
+path="res://.godot/imported/16x32 Run-Sheet.png-bc0ba2c6d30d5967062adf40b92d3779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character assets/16x32/16x32 Run-Sheet.png"
-dest_files=["res://.godot/imported/16x32 Run-Sheet.png-bb329358370d641dc09b6c8f216ffcc9.ctex"]
+source_file="res://new-game-project/Character assets/16x32/16x32 Run-Sheet.png"
+dest_files=["res://.godot/imported/16x32 Run-Sheet.png-bc0ba2c6d30d5967062adf40b92d3779.ctex"]
 
 [params]
 

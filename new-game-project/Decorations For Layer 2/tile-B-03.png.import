@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bakjc0tbhtgyj"
-path="res://.godot/imported/tile-B-03.png-d665082f8e0900bb23ab16b0a7889ce2.ctex"
+path="res://.godot/imported/tile-B-03.png-edf49d6ccd4127871213169a73e7b328.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Decorations For Layer 2/tile-B-03.png"
-dest_files=["res://.godot/imported/tile-B-03.png-d665082f8e0900bb23ab16b0a7889ce2.ctex"]
+source_file="res://new-game-project/Decorations For Layer 2/tile-B-03.png"
+dest_files=["res://.godot/imported/tile-B-03.png-edf49d6ccd4127871213169a73e7b328.ctex"]
 
 [params]
 

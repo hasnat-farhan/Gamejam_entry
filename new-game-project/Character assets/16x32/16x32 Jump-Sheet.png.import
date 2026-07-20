@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8gdt3hkur5n6"
-path="res://.godot/imported/16x32 Jump-Sheet.png-33da2311f78bc3c321ee4c423d3b511e.ctex"
+path="res://.godot/imported/16x32 Jump-Sheet.png-d3b0be5a996ec39dbf38a128e94eaa8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character assets/16x32/16x32 Jump-Sheet.png"
-dest_files=["res://.godot/imported/16x32 Jump-Sheet.png-33da2311f78bc3c321ee4c423d3b511e.ctex"]
+source_file="res://new-game-project/Character assets/16x32/16x32 Jump-Sheet.png"
+dest_files=["res://.godot/imported/16x32 Jump-Sheet.png-d3b0be5a996ec39dbf38a128e94eaa8f.ctex"]
 
 [params]
 

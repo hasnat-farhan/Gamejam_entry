@@ -31,6 +31,8 @@ func _ready():
 		set_process_unhandled_input(false)
 		set_physics_process(false)
 		return
+	set_process_input(true)
+	set_process_unhandled_input(true)
 	await owner.ready
 	if start_delay > Vector2.ZERO:
 		var delay = randf_range(start_delay.x, start_delay.y)
@@ -114,16 +116,14 @@ func _handle_input_states(event):
 
 ## Used to load the state machine data (from a save file).
 func receive_data(data: DataState):
-	if data and current_state != null:
-		if data.state_index >= 0 and data.state_index < get_child_count():
-			var state_node: State = get_child(data.state_index)
-			state_node.enable(params)
+	if data:
+		var state_node: State = get_child(data.state_index)
+		state_node.enable(params)
 
 ## Get the state machine data to save.
 func get_data() -> DataState:
 	var data = DataState.new()
-	if current_state != null:
-		data.state_index = current_state.get_index()
+	data.state_index = current_state.get_index()
 	return data
 
 func enable_state_by_name(state_name: String):

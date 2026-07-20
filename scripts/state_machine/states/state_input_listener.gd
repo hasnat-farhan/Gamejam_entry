@@ -7,7 +7,6 @@ extends State
 @export var input_actions: Array[InputAction] = [] ## An array of input actions to listen for.
 
 func handle_input(event: InputEvent):
-	if !event.is_action_type():
-		return
 	for input_data in input_actions:
-		input_data.check_input(event, node_ref)
+		if event.is_action_type():
+			input_data.check_input(event, node_ref)

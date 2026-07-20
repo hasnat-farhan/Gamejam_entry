@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bse8y3u56vklc"
-path="res://.godot/imported/spritesheet_hospital_lab.png-d8b7c60e4ed35fef56ceda6ba9724cd0.ctex"
+path="res://.godot/imported/spritesheet_hospital_lab.png-3270e75dae2235354a7c11b8973d9932.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free Assets/spritesheet_hospital_lab.png"
-dest_files=["res://.godot/imported/spritesheet_hospital_lab.png-d8b7c60e4ed35fef56ceda6ba9724cd0.ctex"]
+source_file="res://new-game-project/Free Assets/spritesheet_hospital_lab.png"
+dest_files=["res://.godot/imported/spritesheet_hospital_lab.png-3270e75dae2235354a7c11b8973d9932.ctex"]
 
 [params]
 

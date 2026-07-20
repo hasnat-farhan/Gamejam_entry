@@ -1,4 +1,4 @@
- extends Node2D
+extends Node2D
 ## Adds or removes items from an entity inventory.
 
 @export var contents: Array[ContentItem] ## A list of items to be obtained.

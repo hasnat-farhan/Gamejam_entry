@@ -62,15 +62,12 @@ func remove_item(item_name: String, quantity: int):
 			print("%s removed from %s's inventory! q: 0" % [item_name, self.name])
 
 func _update_item_list():
-	item_list.clear()
 	for content: ContentItem in items:
 		var item = content.item
 		var item_name = "%s x%s" % [tr(item.resource_name), content.quantity]
 		item_list.add_item(item_name, item.icon)
 
 func _on_item_list_item_activated(index: int) -> void:
-	if index < 0 or index >= items.size():
-		return
 	var item = items[index].item
 	if item is DataWeapon:
 		equip_weapon.emit(item)

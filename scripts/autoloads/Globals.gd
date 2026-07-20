@@ -60,15 +60,9 @@ func get_current_level():
 	return level
 
 func load_last_saved_level():
-	var save_data = DataManager.get_file_data()
-	if save_data == null or save_data.game_data == null:
-		push_warning("No save data available to restore the previous level.")
-		return
-	var level_to_load = save_data.game_data.level
-	if not level_to_load.is_empty():
+	var level_to_load = DataManager.get_file_data().game_data.level
+	if level_to_load:
 		SceneManager.swap_scenes(level_to_load, get_tree().root, get_current_level(), Const.TRANSITION.FADE_TO_WHITE)
-	else:
-		push_warning("Saved level path is empty; unable to load the previous level.")
 
 func get_node_inventory(node):
 	return node.inventory if node.get("inventory") else null

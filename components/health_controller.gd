@@ -15,9 +15,6 @@ class_name HealthController
 
 var hp_bar: HpBar ## The health_bar instance.
 
-## Number of recovery periods currently active. immortal stays true while > 0.
-var _recovery_count := 0
-
 @onready var hp := max_hp:
 	set(new_hp):
 		hp = new_hp
@@ -55,13 +52,7 @@ func change_hp(value, from = ""):
 	if hp == 0 and on_hp_0:
 		on_hp_0.enable()
 
-## Temporarily grants invulnerability for recovery_time seconds.
-## Uses a counter so overlapping calls don't cancel each other's invulnerability early.
 func recover():
-	_recovery_count += 1
 	immortal = true
 	await get_tree().create_timer(recovery_time).timeout
-	_recovery_count -= 1
-	if _recovery_count <= 0:
-		_recovery_count = 0
-		immortal = false
+	immortal = false

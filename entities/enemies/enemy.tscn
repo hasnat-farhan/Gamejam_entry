@@ -8,7 +8,6 @@
 [ext_resource type="Script" uid="uid://igey4j36or78" path="res://components/health_controller.gd" id="5_ipr6v"]
 [ext_resource type="Script" uid="uid://dp66ice2hhj8n" path="res://scripts/state_machine/state_machine.gd" id="6_gj3y3"]
 [ext_resource type="Script" uid="uid://dd2m5xedjwd4m" path="res://scripts/state_machine/states/state_callable.gd" id="7_56i32"]
-[ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="8_enemy"]
 
 [sub_resource type="Resource" id="Resource_56i32"]
 script = ExtResource("2_gj3y3")
@@ -508,13 +507,9 @@ animations = [{
 }]
 
 [node name="Enemy1" instance=ExtResource("1_ftgfs")]
-script = ExtResource("8_enemy")
 weapon = SubResource("Resource_56i32")
 max_speed = 100.0
 friction = 1500.0
-detection_range = 150.0
-attack_range = 30.0
-wander_time_range = Vector2(1.0, 3.0)
 
 [node name="AnimatedSprite2D" parent="." index="2"]
 material = SubResource("ShaderMaterial_msovg")

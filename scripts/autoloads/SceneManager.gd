@@ -93,9 +93,6 @@ func _add_loading_screen(transition_type:String="fade_to_black"):
 ## [b][color=plum]scene_to_unload[/color][/b] - [Node] scene you're unloading, leave null to skip unloading step thought YRMV - use with caution[br]
 ## [b][color=plum]transition_type[/color][/b] - [String] name of transition[br] see top of [Door] class for options
 func swap_scenes(scene_to_load:String, load_into:Node=null, scene_to_unload:Node=null, transition_type:String="fade_to_black") -> void:
-	if scene_to_load.is_empty():
-		push_warning("SceneManager refused to load an empty scene path.")
-		return
 	
 	if _loading_in_progress:
 		push_warning("SceneManager is already loading something")
@@ -180,17 +177,11 @@ func _monitor_load_status() -> void:
 
 ## internal - fires when content has begun loading but failed to complete
 func _on_content_failed_to_load(path:String) -> void:
-	printerr("error: Failed to load resource: '%s'" % [path])
-	_loading_in_progress = false
-	if _loading_screen != null:
-		_loading_screen.finish_transition()
+	printerr("error: Failed to load resource: '%s'" % [path])	
 
 ## internal - fires when attemption to load invalid content (e.g. content does not exist or path is incorrect)
 func _on_content_invalid(path:String) -> void:
 	printerr("error: Cannot load resource: '%s'" % [path])
-	_loading_in_progress = false
-	if _loading_screen != null:
-		_loading_screen.finish_transition()
 	
 ## internal - fires when content is done loading. This is responsible for data transfer, adding the incoming scene
 ## removing the outgoing scene, hanlding the zelda transition (if of that type), halting the game until the 
@@ -208,11 +199,6 @@ func _on_content_invalid(path:String) -> void:
 ## [b][color=plum]start_scene[/color][/b] implement this to kick off your scene. I use it to return control to the player. But you could also trigger events with the scene or anything else you want to hold until loading and transitioning are both totally done.[br][br]
 ## For sample implementations, see [Level]
 func _on_content_finished_loading(incoming_scene) -> void:
-	if incoming_scene == null:
-		_loading_in_progress = false
-		return
-	if _load_scene_into == null:
-		_load_scene_into = get_tree().root
 	var outgoing_scene = _scene_to_unload	# NEW > can't use current_scene anymore
 	
 	# if our outgoing_scene has data to pass, give it to our incoming_scene
@@ -259,9 +245,6 @@ func _on_content_finished_loading(incoming_scene) -> void:
 		
 		# Wait or loading animation to finish
 		await _loading_screen.anim_player.animation_finished
-		# Free the loading screen now that the transition is complete to avoid a memory leak.
-		_loading_screen.queue_free()
-		_loading_screen = null
 
 	# if your incoming scene implements init_scene() > call it here
 	# ex: I'm using it to enable control of the player (they're locked while in transition)

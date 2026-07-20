@@ -1031,6 +1031,12 @@ action = "attack"
 function_name = "attack"
 metadata/_custom_type_script = "uid://dlqmc36quropm"
 
+[sub_resource type="Resource" id="Resource_fireball"]
+script = ExtResource("12_b2kln")
+action = "fireball"
+function_name = "cast_fireball"
+metadata/_custom_type_script = "uid://dlqmc36quropm"
+
 [sub_resource type="Resource" id="Resource_mtric"]
 script = ExtResource("12_b2kln")
 action = "jump"
@@ -1089,7 +1095,7 @@ script = ExtResource("11_we0b7")
 [node name="input_actions" type="Node" parent="StateMachine/move" index="0" unique_id=1239390229 node_paths=PackedStringArray("node_ref")]
 script = ExtResource("4_b1v48")
 node_ref = NodePath("../../..")
-input_actions = Array[ExtResource("12_b2kln")]([SubResource("Resource_we0b7"), SubResource("Resource_mtric")])
+input_actions = Array[ExtResource("12_b2kln")]([SubResource("Resource_we0b7"), SubResource("Resource_fireball"), SubResource("Resource_mtric")])
 
 [node name="attack" type="Node" parent="StateMachine" index="1" unique_id=2060421400 node_paths=PackedStringArray("on_completion")]
 script = ExtResource("12_m3ydn")
@@ -1207,12 +1213,6 @@ node = NodePath("../../..")
 on_enter = Dictionary[String, Variant]({
 "is_hurting": true
 })
-
-[node name="show_game_over" type="Node" parent="StateMachine/death" index="2" unique_id=1234567890 node_paths=PackedStringArray("node")]
-script = ExtResource("14_gx6sm")
-node = NodePath("../../..")
-method_name = "show_game_over"
-send_statemachine_params = false
 
 [node name="Inventory" parent="." index="11" unique_id=531146878 instance=ExtResource("15_gx6sm")]
 visible = false

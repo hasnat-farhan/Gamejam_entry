@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://dayefv6yyr2we"]
+[gd_scene load_steps=18 format=4 uid="uid://dayefv6yyr2we"]
 
 [ext_resource type="Script" uid="uid://cyncm32qdovi5" path="res://scripts/start_screen.gd" id="1_flm04"]
 
@@ -128,15 +128,6 @@ font_weight = 700
 subpixel_positioning = 0
 msdf_pixel_range = 8
 msdf_size = 128
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
 cache/0/16/0/ascent = 18.0
 cache/0/16/0/descent = 5.0
 cache/0/16/0/underline_position = 0.984375
@@ -1108,22 +1099,6 @@ cache/0/20/0/kerning_overrides/18/0 = Vector2(0, 0)
 cache/0/20/0/kerning_overrides/19/0 = Vector2(0, 0)
 cache/0/20/0/kerning_overrides/20/0 = Vector2(0, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r03hu"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
-corner_detail = 16
-shadow_color = Color(0, 0, 0, 0.360784)
-shadow_size = 1
-shadow_offset = Vector2(1, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ng4jn"]
 bg_color = Color(0.592157, 0.27451, 0.584314, 1)
 border_width_left = 4
@@ -1140,7 +1115,23 @@ shadow_color = Color(0, 0, 0, 0.360784)
 shadow_size = 1
 shadow_offset = Vector2(1, 1)
 
-[node name="StartScreen" type="Control" unique_id=85351249]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r03hu"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 16
+shadow_color = Color(0, 0, 0, 0.360784)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[node name="StartScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -1150,7 +1141,7 @@ grow_vertical = 2
 script = ExtResource("1_flm04")
 start_level = "uid://b70sj1xr15rx7"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1264664723]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.5
@@ -1162,55 +1153,55 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1597073355]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer" unique_id=338845538]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/v_separation = 9
 
-[node name="NewGame" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=1495840147]
+[node name="NewGame" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontFile_licy4")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ng4jn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 text = "new_game"
 
-[node name="Continue" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=75153232]
+[node name="Continue" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer"]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontFile_licy4")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ng4jn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 text = "continue"
 
-[node name="Settings" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=1763481032]
+[node name="Settings" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontFile_licy4")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ng4jn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 text = "settings"
 
-[node name="Quit" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=940502924]
+[node name="Quit" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontFile_licy4")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ng4jn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r03hu")
 text = "quit"
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1689194533]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1221,7 +1212,7 @@ grow_vertical = 0
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_bottom = 5
 
-[node name="VersionNum" type="Label" parent="MarginContainer" unique_id=1278535774]
+[node name="VersionNum" type="Label" parent="MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 10

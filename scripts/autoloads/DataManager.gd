@@ -28,7 +28,7 @@ func load_file_data():
 
 func get_player_data(player_id: int):
 	var player_data = get_file_data().player_data if _file else null
-	if player_data and player_data.has(player_id):
+	if player_data and player_data.size() >= player_id:
 		return player_data[player_id]
 	return null
 
@@ -63,9 +63,7 @@ func _load_game_data():
 	if !get_file_data().game_data:
 		return
 	var current_level = Globals.get_current_level()
-	var saved_level = get_file_data().game_data.level
-	var level_mismatch = current_level == null or saved_level != current_level.scene_file_path
-	if level_mismatch and not saved_level.is_empty():
+	if current_level and get_file_data().game_data.level != current_level.scene_file_path or !current_level:
 		Globals.load_last_saved_level()
 
 func _load_nodes_data():
@@ -95,16 +93,11 @@ func save_player_data(player_id: int, data: Dictionary):
 			player_data[key] = data[key]
 
 func _save_game_data():
-	var game_data: DataGame = _get_game_data()
-	if game_data != null:
-		get_file_data().game_data = game_data
+	get_file_data().game_data = _get_game_data()
 
-func _get_game_data() -> DataGame:
-	var current_level = Globals.get_current_level()
-	if current_level == null or current_level.scene_file_path.is_empty():
-		return null
+func _get_game_data():
 	var game_data := DataGame.new()
-	game_data.level = current_level.scene_file_path
+	game_data.level = Globals.get_current_level().scene_file_path
 	return game_data
 
 func _get_save_nodes():

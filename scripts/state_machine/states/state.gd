@@ -35,9 +35,6 @@ func _enter_tree():
 		active = false
 
 func enable(params = null, sender = null): ## Enables this state.
-	if not state_machine:
-		push_warning("State %s attempted to enable without a StateMachine." % name)
-		return
 	if params:
 		state_machine.params = params
 	state_machine.enable_state(self, sender)

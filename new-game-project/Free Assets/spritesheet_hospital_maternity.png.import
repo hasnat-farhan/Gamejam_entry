@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l47tbengu1u5"
-path="res://.godot/imported/spritesheet_hospital_maternity.png-627c058b738ae337d646503fe1c2b6bf.ctex"
+path="res://.godot/imported/spritesheet_hospital_maternity.png-6b302128b54278847f8cf59ee19c87fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free Assets/spritesheet_hospital_maternity.png"
-dest_files=["res://.godot/imported/spritesheet_hospital_maternity.png-627c058b738ae337d646503fe1c2b6bf.ctex"]
+source_file="res://new-game-project/Free Assets/spritesheet_hospital_maternity.png"
+dest_files=["res://.godot/imported/spritesheet_hospital_maternity.png-6b302128b54278847f8cf59ee19c87fe.ctex"]
 
 [params]
 

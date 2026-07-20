@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cybs1xid7a0dg"
-path="res://.godot/imported/16x32 Rotate-Sheet.png-35b3f4394cad69163db9ff253a3fa7ea.ctex"
+path="res://.godot/imported/16x32 Rotate-Sheet.png-85862c68aaeb080e6c0f1d181192f75e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character assets/16x32/16x32 Rotate-Sheet.png"
-dest_files=["res://.godot/imported/16x32 Rotate-Sheet.png-35b3f4394cad69163db9ff253a3fa7ea.ctex"]
+source_file="res://new-game-project/Character assets/16x32/16x32 Rotate-Sheet.png"
+dest_files=["res://.godot/imported/16x32 Rotate-Sheet.png-85862c68aaeb080e6c0f1d181192f75e.ctex"]
 
 [params]
 

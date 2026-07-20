@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpv5l2fcl2alb"
-path="res://.godot/imported/16x32 Interact-Sheet.png-3d142f3267802d935651750e70fc6a21.ctex"
+path="res://.godot/imported/16x32 Interact-Sheet.png-5ac6fd235cc5f6a5c0822bdfe8299105.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character assets/16x32/16x32 Interact-Sheet.png"
-dest_files=["res://.godot/imported/16x32 Interact-Sheet.png-3d142f3267802d935651750e70fc6a21.ctex"]
+source_file="res://new-game-project/Character assets/16x32/16x32 Interact-Sheet.png"
+dest_files=["res://.godot/imported/16x32 Interact-Sheet.png-5ac6fd235cc5f6a5c0822bdfe8299105.ctex"]
 
 [params]
 
