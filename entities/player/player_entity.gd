@@ -13,6 +13,8 @@ var fireball_container: Node2D
 var _footstep_rng := RandomNumberGenerator.new()
 @export var fireball_projectile_scene: PackedScene = preload("res://fireball_node_adeeb/Projectiles/Projectile.tscn")
 
+const GAME_OVER_SCENE: PackedScene = preload("res://scenes/menus/game_over.tscn")
+
 func _ready():
 	super._ready()
 	_prepare_fireball_container()
@@ -159,3 +161,7 @@ func disable_entity(value: bool, delay = 0.0):
 	await get_tree().create_timer(delay).timeout
 	stop()
 	input_enabled = !value
+
+func _show_game_over():
+	var game_over = GAME_OVER_SCENE.instantiate()
+	get_tree().root.add_child(game_over)
