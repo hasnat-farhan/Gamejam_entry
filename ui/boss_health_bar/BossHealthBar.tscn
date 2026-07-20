@@ -1,0 +1,153 @@
+[gd_scene load_steps=8 format=3 uid="uid://c1vym38dr8j1b"]
+
+[ext_resource type="Script" path="res://ui/boss_health_bar/BossHealthBar.gd" id="1_7nq2l"]
+[ext_resource type="Texture2D" uid="uid://0k1d7sa2n3bf" path="res://assets/ui/progress_bar.png" id="2_mdf73"]
+[ext_resource type="Texture2D" uid="uid://wgj2d03ak5ms" path="res://assets/ui/over_bar.png" id="3_t7y1s"]
+
+[sub_resource type="Animation" id="Animation_fade_in"]
+resource_name = "fade_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BossName:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HealthBar:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BarUnder:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fade_out"]
+resource_name = "fade_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BossName:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HealthBar:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BarUnder:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4he5q"]
+_data = {
+"fade_in": SubResource("Animation_fade_in"),
+"fade_out": SubResource("Animation_fade_out")
+}
+
+[node name="BossHealthBar" type="CanvasLayer"]
+layer = 128
+script = ExtResource("1_7nq2l")
+
+[node name="BossName" type="RichTextLabel" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 117.0
+offset_top = -72.0
+offset_right = -122.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/default_color = Color(0.95, 0.2, 0.2, 1)
+text = "BOSS"
+horizontal_alignment = 1
+bbcode_enabled = true
+fit_content = true
+
+[node name="BarUnder" type="TextureRect" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 115.0
+offset_top = -42.0
+offset_right = -119.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_t7y1s")
+stretch_mode = 1
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 117.0
+offset_top = -40.0
+offset_right = -121.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = false
+texture_progress = ExtResource("2_mdf73")
+value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4he5q")
+}
+
+[node name="HideTimer" type="Timer" parent="."]
+one_shot = true
+wait_time = 1.0
+
+[connection signal="timeout" from="HideTimer" to="." method="_on_hide_timer_timeout"]

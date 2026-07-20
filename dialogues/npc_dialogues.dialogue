@@ -1,0 +1,51 @@
+~ female_adventurer_talk
+
+Adventurer: I've traveled far to help this realm. [ID:ADV_HELLO]
+- Tell me about yourself [ID:ADV_ABOUT]
+	Adventurer: I was once a knight of the northern kingdom, but now I wander, helping those in need. [ID:ADV_BIO]
+- Any advice for me? [ID:ADV_ADVICE]
+	Adventurer: Keep your wits sharp and your blade sharper. The dungeons are full of dangers, but also treasures. [ID:ADV_TIP]
+- I should be going [ID:ADV_LEAVE]
+	Adventurer: Safe travels! May the light guide your path. [ID:ADV_FAREWELL]
+	=> END
+Adventurer: Stay safe out there. [ID:ADV_SEE_YOU]
+=> END
+
+~ doctor_talk
+
+Doctor: Welcome to my clinic. You look like you've seen better days. [ID:DOC_HELLO]
+- I need healing [ID:DOC_HEAL]
+	Doctor: Rest is the best medicine, but I can give you a potion if you have one. [ID:DOC_TREAT]
+- What's wrong with this place? [ID:DOC_ABOUT]
+	Doctor: Strange things have been happening. The dungeon... it's been spreading. The sick keep coming. [ID:DOC_LORE]
+- Goodbye [ID:DOC_LEAVE]
+	Doctor: Take care of yourself. [ID:DOC_FAREWELL]
+	=> END
+Doctor: Don't forget to rest between battles. [ID:DOC_REMIND]
+=> END
+
+~ nurse_talk
+
+Nurse: Oh, hello there! You're not injured, are you? [ID:NRS_HELLO]
+- I'm fine, thanks [ID:NRS_FINE]
+	Nurse: That's good to hear! Let me know if you need anything. [ID:NRS_KIND]
+- Do you have supplies? [ID:NRS_SUPPLIES]
+	Nurse: I have bandages and herbs, but I'm running low. The dungeon takes a toll on everyone. [ID:NRS_STOCKS]
+- I'll be on my way [ID:NRS_LEAVE]
+	Nurse: Take care, dear! [ID:NRS_FAREWELL]
+	=> END
+Nurse: Stay healthy out there! [ID:NRS_WAVE]
+=> END
+
+~ pacient_talk
+
+Patient: Ugh... this place is a nightmare. [ID:PAT_GRUMBLE]
+- What happened to you? [ID:PAT_STORY]
+	Patient: I went into the dungeon looking for treasure. Found a monster instead. Barely escaped with my life. [ID:PAT_TALE]
+- Get well soon [ID:PAT_COMFORT]
+	Patient: Thanks... I'll try. Just don't end up like me. [ID:PAT_THANKS]
+- I have to go [ID:PAT_LEAVE]
+	Patient: Be careful in there. The shadows... they move. [ID:PAT_WARNING]
+	=> END
+Patient: Don't make the same mistake I did. [ID:PAT_ADVICE]
+=> END

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://adassets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Attack.png" id="1"]
+
+[node name="Mushroom_Attack" type="Sprite2D"]
+texture = ExtResource("1")

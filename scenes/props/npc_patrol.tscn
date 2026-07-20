@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://npc_patrol_uid"]
+
+[ext_resource type="Script" path="res://scenes/props/npc_patrol.gd" id="1_sv03j"]
+
+[node name="NPCPatrol" type="Node2D"]
+script = ExtResource("1_sv03j")
+
+[node name="PatrolPath" type="Path2D" parent="."]
+
+[node name="Curve2D" type="Curve2D" parent="PatrolPath"]
+_data = {
+"points": [{
+"in": Vector2(0, 0),
+"out": Vector2(0, 0),
+"position": Vector2(-96, 0)
+}, {
+"in": Vector2(0, 0),
+"out": Vector2(0, 0),
+"position": Vector2(96, 0)
+}]
+}
+
+[node name="NPC" type="Node2D" parent="."]

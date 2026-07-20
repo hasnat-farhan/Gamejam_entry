@@ -24,6 +24,11 @@
 [ext_resource type="Texture2D" uid="uid://cs4vk2npt22g2" path="res://tilesadeeb/raven_fantasy_forest/All_Tileset/16x16.png" id="14_htt4o"]
 [ext_resource type="Texture2D" uid="uid://tiqbxdd1djgw" path="res://[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/WallFountainAnimated-1.png" id="20_xonpg"]
 [ext_resource type="Texture2D" uid="uid://bmrxji7e0126d" path="res://[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/[Free-Ver.]Props.png" id="21_htt4o"]
+[ext_resource type="PackedScene" uid="uid://ts67v2gv2hqh" path="res://entities/enemies/skeleton_enemy.tscn" id="22_skel"]
+[ext_resource type="PackedScene" uid="uid://58ef3caf2353429f" path="res://scenes/adeeb_assets/minotaur.tscn" id="23_admn"]
+[ext_resource type="PackedScene" uid="uid://4c48caaf3e7446bb" path="res://scenes/adeeb_assets/mimic.tscn" id="24_admm"]
+[ext_resource type="PackedScene" uid="uid://bdupyms4v14m3" path="res://scenes/adeeb_assets/blacksmith.tscn" id="25_adbs"]
+[ext_resource type="PackedScene" uid="uid://9d5953cfbebb4048" path="res://scenes/adeeb_assets/shopkeeper/shopkeeper.tscn" id="26_adsh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_htt4o"]
 texture = ExtResource("1_r3yhe")
@@ -50273,3 +50278,93 @@ position = Vector2(320, 240)
 
 [node name="Transfer_01" type="Node2D" parent="Entities" unique_id=1282075128 groups=["destination"]]
 position = Vector2(96, 240)
+
+[node name="Skeleton1" parent="Entities" unique_id=1000000001 instance=ExtResource("22_skel")]
+position = Vector2(550, 260)
+
+[node name="Skeleton2" parent="Entities" unique_id=1000000002 instance=ExtResource("22_skel")]
+position = Vector2(150, 420)
+
+[node name="Skeleton3" parent="Entities" unique_id=1000000003 instance=ExtResource("22_skel")]
+position = Vector2(580, 420)
+
+[node name="Skeleton4" parent="Entities" unique_id=1000000004 instance=ExtResource("22_skel")]
+position = Vector2(400, 130)
+
+[node name="Skeleton5" parent="Entities" unique_id=1000000005 instance=ExtResource("22_skel")]
+position = Vector2(100, 160)
+
+[node name="Skeleton6" parent="Entities" unique_id=1000000006 instance=ExtResource("22_skel")]
+position = Vector2(620, 160)
+
+[node name="Skeleton7" parent="Entities" unique_id=1000000007 instance=ExtResource("22_skel")]
+position = Vector2(280, 480)
+
+[node name="Skeleton8" parent="Entities" unique_id=1000000008 instance=ExtResource("22_skel")]
+position = Vector2(500, 480)
+
+[node name="Minotaur" parent="Entities" unique_id=1000000010 instance=ExtResource("23_admn")]
+position = Vector2(600, 300)
+
+[node name="Shopkeeper" parent="Entities" unique_id=1000000011 instance=ExtResource("26_adsh")]
+position = Vector2(50, 300)
+
+[node name="Blacksmith" parent="Entities" unique_id=1000000012 instance=ExtResource("25_adbs")]
+position = Vector2(320, 100)
+
+[node name="Mimic1" parent="Entities" unique_id=1000000013 instance=ExtResource("24_admm")]
+position = Vector2(150, 100)
+
+[node name="Mimic2" parent="Entities" unique_id=1000000014 instance=ExtResource("24_admm")]
+position = Vector2(640, 480)
+
+[node name="Skeleton9" parent="Entities" unique_id=1000000015 instance=ExtResource("22_skel")]
+position = Vector2(720, 260)
+
+[node name="Skeleton10" parent="Entities" unique_id=1000000016 instance=ExtResource("22_skel")]
+position = Vector2(60, 380)
+
+[node name="Skeleton11" parent="Entities" unique_id=1000000017 instance=ExtResource("22_skel")]
+position = Vector2(700, 120)
+
+[node name="Skeleton12" parent="Entities" unique_id=1000000018 instance=ExtResource("22_skel")]
+position = Vector2(50, 60)
+
+[node name="Skeleton13" parent="Entities" unique_id=1000000019 instance=ExtResource("22_skel")]
+position = Vector2(750, 480)
+
+[node name="Skeleton14" parent="Entities" unique_id=1000000020 instance=ExtResource("22_skel")]
+position = Vector2(450, 60)
+
+[node name="Skeleton15" parent="Entities" unique_id=1000000021 instance=ExtResource("22_skel")]
+position = Vector2(200, 520)
+
+[node name="Skeleton16" parent="Entities" unique_id=1000000022 instance=ExtResource("22_skel")]
+position = Vector2(700, 360)
+
+[node name="Minotaur2" parent="Entities" unique_id=1000000023 instance=ExtResource("23_admn")]
+position = Vector2(120, 480)
+
+[node name="Minotaur3" parent="Entities" unique_id=1000000024 instance=ExtResource("23_admn")]
+position = Vector2(700, 200)
+
+[node name="Blacksmith2" parent="Entities" unique_id=1000000025 instance=ExtResource("25_adbs")]
+position = Vector2(450, 520)
+
+[node name="Blacksmith3" parent="Entities" unique_id=1000000026 instance=ExtResource("25_adbs")]
+position = Vector2(80, 200)
+
+[node name="Shopkeeper2" parent="Entities" unique_id=1000000027 instance=ExtResource("26_adsh")]
+position = Vector2(750, 80)
+
+[node name="Shopkeeper3" parent="Entities" unique_id=1000000028 instance=ExtResource("26_adsh")]
+position = Vector2(30, 520)
+
+[node name="Mimic3" parent="Entities" unique_id=1000000029 instance=ExtResource("24_admm")]
+position = Vector2(400, 520)
+
+[node name="Mimic4" parent="Entities" unique_id=1000000030 instance=ExtResource("24_admm")]
+position = Vector2(60, 100)
+
+[node name="Mimic5" parent="Entities" unique_id=1000000031 instance=ExtResource("24_admm")]
+position = Vector2(780, 300)

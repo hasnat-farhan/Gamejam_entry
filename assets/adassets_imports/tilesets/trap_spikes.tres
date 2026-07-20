@@ -1,0 +1,34 @@
+[gd_resource type="TileSet" format=3 uid="uid://trap_spikes_tileset"]
+
+[ext_resource type="Texture2D" path="res://adassets/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/Trap-Spikes-Floor.png" id="1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1"]
+texture = ExtResource("1")
+texture_region_size = Vector2i(24, 24)
+0:0/0 = 0
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.2
+0:0/animation_frame_2/duration = 0.2
+0:0/animation_frame_3/duration = 0.2
+1:0/0 = 0
+1:0/animation_columns = 4
+1:0/animation_frame_0/duration = 0.2
+1:0/animation_frame_1/duration = 0.2
+1:0/animation_frame_2/duration = 0.2
+1:0/animation_frame_3/duration = 0.2
+2:0/0 = 0
+2:0/animation_columns = 4
+2:0/animation_frame_0/duration = 0.2
+2:0/animation_frame_1/duration = 0.2
+2:0/animation_frame_2/duration = 0.2
+2:0/animation_frame_3/duration = 0.2
+3:0/0 = 0
+3:0/animation_columns = 4
+3:0/animation_frame_0/duration = 0.2
+3:0/animation_frame_1/duration = 0.2
+3:0/animation_frame_2/duration = 0.2
+3:0/animation_frame_3/duration = 0.2
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_1")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://adassets/1enemies&stuff/Flying Demon 2D Pixel Art/Sprites/without_outline/DEATH.png" id="1"]
+
+[node name="DEATH" type="Sprite2D"]
+texture = ExtResource("1")

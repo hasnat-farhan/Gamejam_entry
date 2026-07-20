@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://enemy_spawner_uid"]
+
+[ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="1_7q4hy"]
+
+[node name="EnemySpawner" type="Node2D"]
+script = ExtResource("1_7q4hy")
+
+[node name="Label" type="Label" parent="."]
+position = Vector2(16, 0)
+text = "SPAWNER"
+theme_override_colors/font_color = Color(0.231373, 0.6, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+
+[node name="SpawnTimer" type="Timer" parent="."]
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

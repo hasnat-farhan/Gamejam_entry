@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://sword_wave_uid"]
+
+[ext_resource type="Script" uid="uid://b3vx4l9ht8m6k" path="res://fireball_node_adeeb/Projectiles/sword_wave.gd" id="1_script"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wave"]
+size = Vector2(32, 12)
+
+[node name="SwordWave" type="Area2D" groups=["Projectile"]]
+script = ExtResource("1_script")
+speed = 250
+damage = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = null
+scale = Vector2(1.0, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, 0)
+shape = SubResource("RectangleShape2D_wave")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

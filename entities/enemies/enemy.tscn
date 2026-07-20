@@ -516,6 +516,7 @@ material = SubResource("ShaderMaterial_msovg")
 sprite_frames = SubResource("SpriteFrames_sb13e")
 
 [node name="HurtBox" parent="." index="8" node_paths=PackedStringArray("health_controller")]
+collision_mask = 16
 health_controller = NodePath("../HealthController")
 
 [node name="CollisionShape2D" parent="HurtBox" index="0"]

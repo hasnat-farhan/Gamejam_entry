@@ -1,0 +1,19 @@
+[gd_scene format=4 uid="uid://enemy_hp_bar"]
+
+[ext_resource type="Script" uid="uid://ct3r6n5hf377k" path="res://scenes/hud/entity_hp_bar.gd" id="1_uxal8"]
+[ext_resource type="Texture2D" uid="uid://dnfkfjs86era6" path="res://scenes/hud/heart-empty.png" id="1_ypjl8"]
+[ext_resource type="Texture2D" uid="uid://ycfmtnxswo8m" path="res://scenes/hud/heart.png" id="2_qqi80"]
+
+[node name="EnemyHPBar" type="CanvasLayer"]
+offset = Vector2(0, -20)
+script = ExtResource("1_uxal8")
+texture_under = NodePath("BarUnder")
+texture_progress = NodePath("BarProgress")
+
+[node name="BarUnder" type="TextureRect" parent="."]
+texture = ExtResource("1_ypjl8")
+stretch_mode = 1
+
+[node name="BarProgress" type="TextureRect" parent="."]
+texture = ExtResource("2_qqi80")
+stretch_mode = 1

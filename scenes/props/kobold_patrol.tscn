@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://sudghooqkdjn" path="res://scenes/props/kobold_patrol.gd" id="1_4a3m5"]
+[ext_resource type="PackedScene" path="res://entities/enemies/abomination_enemy.tscn" id="2_8e2f6"]
+
+[node name="KoboldPatrol" type="Node2D"]
+script = ExtResource("1_4a3m5")
+
+[node name="PatrolPath" type="Path2D" parent="."]
+
+[node name="Curve2D" type="Curve2D" parent="PatrolPath"]
+_data = {
+"points": [{
+"in": Vector2(0, 0),
+"out": Vector2(0, 0),
+"position": Vector2(-64, -64)
+}, {
+"in": Vector2(0, 0),
+"out": Vector2(0, 0),
+"position": Vector2(64, 64)
+}]
+}
+
+[node name="KoboldEnemy" parent="." instance=ExtResource("2_8e2f6")]
+position = Vector2(0, 0)

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://adassets/1enemies&stuff/Doctor/stage_three.png" id="1"]
+
+[node name="stage_three" type="Sprite2D"]
+texture = ExtResource("1")

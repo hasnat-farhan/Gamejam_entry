@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=3 uid="uid://fireball_explosion_uid"]
+
+[ext_resource type="Script" uid="uid://b1vx2l7ht8m4j" path="res://fireball_node_adeeb/fireball_explosion.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://blyeq0kgg6oeb" path="res://fireball_node_adeeb/Fireball.png" id="2_fireball"]
+
+[sub_resource type="Gradient" id="Gradient_exp"]
+offsets = PackedFloat32Array(0, 0.3, 0.7, 1)
+colors = PackedColorArray(1, 0.85, 0.4, 1, 1, 0.5, 0.1, 1, 1, 0.2, 0, 0.6, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_exp"]
+gradient = SubResource("Gradient_exp")
+
+[sub_resource type="Curve" id="Curve_scale"]
+_data = [Vector2(0, 0.2), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.3), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_scale"]
+curve = SubResource("Curve_scale")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_exp"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+spread = 180.0
+initial_velocity_min = 60.0
+initial_velocity_max = 120.0
+gravity = Vector3(0, 0, 0)
+angular_velocity_min = -360.0
+angular_velocity_max = 360.0
+scale_min = 0.3
+scale_max = 0.6
+scale_curve = SubResource("CurveTexture_scale")
+color_ramp = SubResource("GradientTexture1D_exp")
+
+[node name="FireballExplosion" type="CPUParticles2D"]
+script = ExtResource("1_script")
+emitting = false
+amount = 12
+process_material = SubResource("ParticleProcessMaterial_exp")
+texture = ExtResource("2_fireball")
+lifetime = 0.4
+one_shot = true
+explosiveness = 1.0
+randomness = 0.5
+fixed_fps = 0
+fract_delta = true

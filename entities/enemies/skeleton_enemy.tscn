@@ -1,0 +1,293 @@
+[gd_scene format=3 uid="uid://ts67v2gv2hqh"]
+
+[ext_resource type="PackedScene" uid="uid://2c84y1k62jlc" path="res://entities/enemies/enemy.tscn" id="1_2p7js"]
+[ext_resource type="Shader" uid="uid://blugt5j7e8tag" path="res://shaders/flash.gdshader" id="2_u8n54"]
+[ext_resource type="Texture2D" uid="uid://bgkrq03lq0pf8" path="res://assets/enemies/skeleton.png" id="3_1qsb2"]
+
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8uunq"]
+resource_local_to_scene = true
+shader = ExtResource("2_u8n54")
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+shader_parameter/power = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s9"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s10"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s2"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s11"]
+atlas = ExtResource("3_1qsb2")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0r24x"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0")
+}],
+"loop": 1,
+"name": &"attack-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3")
+}],
+"loop": 1,
+"name": &"attack-left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6")
+}],
+"loop": 1,
+"name": &"attack-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s9")
+}],
+"loop": 1,
+"name": &"attack-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0")
+}],
+"loop": 1,
+"name": &"hurt-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3")
+}],
+"loop": 1,
+"name": &"hurt-left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6")
+}],
+"loop": 1,
+"name": &"hurt-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s9")
+}],
+"loop": 1,
+"name": &"hurt-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1")
+}],
+"loop": 1,
+"name": &"idle-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4")
+}],
+"loop": 1,
+"name": &"idle-left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7")
+}],
+"loop": 1,
+"name": &"idle-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s9")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s10")
+}],
+"loop": 1,
+"name": &"idle-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s2")
+}],
+"loop": 1,
+"name": &"run-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5")
+}],
+"loop": 1,
+"name": &"run-left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8")
+}],
+"loop": 1,
+"name": &"run-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s9")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s11")
+}],
+"loop": 1,
+"name": &"run-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s2")
+}],
+"loop": 1,
+"name": &"walk-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5")
+}],
+"loop": 1,
+"name": &"walk-left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8")
+}],
+"loop": 1,
+"name": &"walk-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s9")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s11")
+}],
+"loop": 1,
+"name": &"walk-up",
+"speed": 5.0
+}]
+
+[node name="SkeletonEnemy" unique_id=670298894 instance=ExtResource("1_2p7js")]
+
+[node name="AnimatedSprite2D" parent="." index="2" unique_id=1449465034]
+material = SubResource("ShaderMaterial_8uunq")
+sprite_frames = SubResource("SpriteFrames_0r24x")
+
+[node name="HealthController" parent="." index="9"]
+max_hp = 5

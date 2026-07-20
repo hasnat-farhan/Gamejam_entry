@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://adassets/1enemies&stuff/The Female Adventurer - Free/Jump - NEW/Normal/Jump_Left_Up.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2"]
+atlas = ExtResource("1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3"]
+atlas = ExtResource("1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4"]
+atlas = ExtResource("1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5"]
+atlas = ExtResource("1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6"]
+atlas = ExtResource("1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1"]
+resource_local_to_scene = true
+animations = [{
+"frames": [
+{"duration": 0.15, "texture": SubResource("AtlasTexture_1")},
+{"duration": 0.15, "texture": SubResource("AtlasTexture_2")},
+{"duration": 0.15, "texture": SubResource("AtlasTexture_3")},
+{"duration": 0.15, "texture": SubResource("AtlasTexture_4")},
+{"duration": 0.15, "texture": SubResource("AtlasTexture_5")},
+{"duration": 0.15, "texture": SubResource("AtlasTexture_6")},
+],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Jump_Left_Up" type="Node2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1")
+playing = true

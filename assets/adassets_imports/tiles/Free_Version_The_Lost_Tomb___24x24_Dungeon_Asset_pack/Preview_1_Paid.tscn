@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://adassets/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/Preview-1 [Paid].png" id="1"]
+
+[node name="Preview_1_Paid" type="Sprite2D"]
+texture = ExtResource("1")
