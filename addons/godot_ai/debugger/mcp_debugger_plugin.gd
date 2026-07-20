@@ -1214,7 +1214,7 @@ func _on_eval_runtime_error(data: Array) -> void:
 	if connection == null or not is_instance_valid(connection):
 		return
 	var msg := "Game eval raised a runtime error: %s" % message if not message.is_empty() else "Game eval raised a runtime error (no message captured). Check logs_read(source='game')."
-	_send_error(connection, request_id, ErrorCodes.EVAL_RUNTIME_ERROR, msg)
+	_send_error(connection, request_id, ErrorCodes.EVAL_runTIME_ERROR, msg)
 	if _log_buffer:
 		_log_buffer.log("[debug] <- mcp:eval_runtime_error (%s): %s" % [request_id, message])
 

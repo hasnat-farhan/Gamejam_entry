@@ -10,7 +10,7 @@ extends CharacterEntity
 var player_id: int = 1 ## A unique id that is assigned to the player on creation. Player 1 will have player_id = 1 and each additional player will have an incremental id, 2, 3, 4, and so on.
 var equipped = 0 ## The id of the weapon equipped by the player.
 var fireball_container: Node2D
-@export var fireball_projectile_scene: PackedScene = preload("res://fireball node adeeb/Projectiles/Projectile.tscn")
+@export var fireball_projectile_scene: PackedScene = preload("res://fireball_node_adeeb/Projectiles/Projectile.tscn")
 
 func _ready():
 	super._ready()

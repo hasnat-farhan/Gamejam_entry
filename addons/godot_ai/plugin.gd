@@ -20,7 +20,7 @@ const MANAGED_SERVER_WS_PORT_SETTING := "godot_ai/managed_server_ws_port"
 ## the managed-server record so a reloaded plugin instance adopting the
 ## same server keeps authenticating; cleared with the rest of the record.
 const MANAGED_SERVER_WS_TOKEN_SETTING := "godot_ai/managed_server_ws_token"
-const UPDATE_RELOAD_RUNNER_SCRIPT := preload("res://addons/godot_ai/update_reload_runner.gd")
+const UPDATE_RELOAD_runNER_SCRIPT := preload("res://addons/godot_ai/update_reload_runner.gd")
 
 ## Server lifecycle + port discovery extracted from this file (#297 PR 5).
 ## State enums + version-check seam extracted in PR 6 (#297). Plugin.gd
@@ -478,7 +478,7 @@ func record_dev_server_toggle(action: String) -> void:
 ## Drain any self_update event written by `update_reload_runner` during the
 ## previous disable -> enable window.
 func _flush_pending_self_update_telemetry() -> void:
-	var key := UPDATE_RELOAD_RUNNER_SCRIPT.PENDING_SELF_UPDATE_TELEMETRY_KEY
+	var key := UPDATE_RELOAD_runNER_SCRIPT.PENDING_SELF_UPDATE_TELEMETRY_KEY
 	var parsed = Telemetry._drain_editor_setting_dict(key)
 	if parsed == null:
 		return
@@ -1655,7 +1655,7 @@ func install_downloaded_update(zip_path: String, temp_dir: String, source_dock: 
 		detached_dock = source_dock
 		remove_control_from_docks(source_dock)
 
-	var runner = UPDATE_RELOAD_RUNNER_SCRIPT.new()
+	var runner = UPDATE_RELOAD_runNER_SCRIPT.new()
 	var parent: Node = EditorInterface.get_base_control()
 	if parent == null:
 		parent = get_tree().root

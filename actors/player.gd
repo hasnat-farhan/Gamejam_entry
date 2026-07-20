@@ -8,9 +8,9 @@ var light_old_pos = Vector2(8, 8)
 @export var light_size = 0.19
 @export var light_brightness = 2.4
 
-var _velocity: = Vector2.ZERO
+var _velocity := Vector2.ZERO
 var _speed = Vector2.ZERO
-var _last_dir: = Vector2.ZERO
+var _last_dir := Vector2.ZERO
 
 func _ready():
 	rng.randomize()

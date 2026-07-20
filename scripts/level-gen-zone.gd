@@ -27,7 +27,7 @@ func _ready():
 		var halfW = ceil(width / 2)
 		var halfH = ceil(height / 2)
 		
-		var splitHori: = true;
+		var splitHori := true
 		if width / height >= 1.25:
 			splitHori = false
 		elif height / width >= 1.25:

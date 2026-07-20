@@ -24,6 +24,9 @@ func transfer(params):
 		_transfer_to_level(entity, level_path)
 	elif entity and destination_name:
 		_transfer_to_position(entity)
+	elif entity is PlayerEntity and not level_path:
+		# Fallback: transfer player to a default scene if no level_path is configured.
+		_transfer_to_level(entity, "res://scenes/levels/node_2d.tscn")
 
 func _transfer_to_level(player, scene_to_load):
 	var current_level: Level = Globals.get_current_level()

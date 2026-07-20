@@ -15,7 +15,7 @@ extends RefCounted
 ## The ints are stable for tests; reordering is a breaking change.
 
 ## No worker running, no pending request. Default state.
-const IDLE := 0
+const idle := 0
 ## A refresh request landed but the editor filesystem is busy
 ## (`EditorInterface.get_resource_filesystem().is_scanning()` is true);
 ## the dock parks the request and retries on the next `_process` after
@@ -26,22 +26,22 @@ const DEFERRED_FOR_FILESYSTEM := 1
 ## Worker thread is alive and probing client status off-main. The
 ## dock paints "(checking...)" in the clients summary and accepts
 ## additional requests as `pending`.
-const RUNNING := 2
+const runNING := 2
 ## Worker has been alive past CLIENT_STATUS_REFRESH_TIMEOUT_MSEC. The
 ## dock paints "(client probe still running)" and a forced refresh is
 ## allowed to abandon the worker into the orphan list and start a new
-## sweep. The state stays RUNNING after a forced abandon-and-restart.
-const RUNNING_TIMED_OUT := 3
+## sweep. The state stays runNING after a forced abandon-and-restart.
+const runNING_TIMED_OUT := 3
 ## `_exit_tree` / `_install_update` is draining workers. New refresh
 ## requests are rejected outright. Set once and not cleared (the dock
 ## instance is being torn down).
 const SHUTTING_DOWN := 4
 
 const _NAMES := {
-	IDLE: "idle",
+	idle: "idle",
 	DEFERRED_FOR_FILESYSTEM: "deferred_for_filesystem",
-	RUNNING: "running",
-	RUNNING_TIMED_OUT: "running_timed_out",
+	runNING: "running",
+	runNING_TIMED_OUT: "running_timed_out",
 	SHUTTING_DOWN: "shutting_down",
 }
 
@@ -51,10 +51,10 @@ static func name_of(state: int) -> String:
 
 
 ## True when a worker thread should be alive in this state. Combined
-## state — RUNNING or RUNNING_TIMED_OUT both have a worker running, but
+## state — runNING or runNING_TIMED_OUT both have a worker running, but
 ## the timed-out flavor allows a force-refresh to abandon it.
 static func has_worker_alive(state: int) -> bool:
-	return state == RUNNING or state == RUNNING_TIMED_OUT
+	return state == runNING or state == runNING_TIMED_OUT
 
 
 ## True while the status worker is still within its healthy budget. Once a
@@ -62,7 +62,7 @@ static func has_worker_alive(state: int) -> bool:
 ## retry Configure / Configure all instead of stranding the controls behind an
 ## orphaned, uninterruptible worker.
 static func should_disable_client_actions(state: int) -> bool:
-	return state == RUNNING
+	return state == runNING
 
 
 ## True when the dock should reject new refresh spawns. Used by the
@@ -74,7 +74,7 @@ static func is_blocked_for_spawn(state: int) -> bool:
 
 ## True when the summary label should show the in-flight badge.
 static func should_show_checking_badge(state: int) -> bool:
-	return state == RUNNING or state == RUNNING_TIMED_OUT
+	return state == runNING or state == runNING_TIMED_OUT
 
 
 ## Transition table. Same shape as McpServerState — illegal transitions
@@ -89,19 +89,19 @@ static func can_transition(from: int, to: int) -> bool:
 	if to == SHUTTING_DOWN:
 		return true
 	match from:
-		IDLE:
-			return to == RUNNING or to == DEFERRED_FOR_FILESYSTEM
+		idle:
+			return to == runNING or to == DEFERRED_FOR_FILESYSTEM
 		DEFERRED_FOR_FILESYSTEM:
 			## When the filesystem scan settles we either spawn a worker
-			## (RUNNING) or roll back to IDLE if no rows need probing.
-			return to == RUNNING or to == IDLE
-		RUNNING:
-			## Worker finishes -> IDLE. Worker outlives budget ->
-			## RUNNING_TIMED_OUT. Forced respawn after orphan abandon
-			## stays in RUNNING (covered by from == to above).
-			return to == IDLE or to == RUNNING_TIMED_OUT
-		RUNNING_TIMED_OUT:
-			## Late-arriving worker result drops back to IDLE; forced
-			## abandon-and-respawn drops back to RUNNING.
-			return to == IDLE or to == RUNNING
+			## (runNING) or roll back to idle if no rows need probing.
+			return to == runNING or to == idle
+		runNING:
+			## Worker finishes -> idle. Worker outlives budget ->
+			## runNING_TIMED_OUT. Forced respawn after orphan abandon
+			## stays in runNING (covered by from == to above).
+			return to == idle or to == runNING_TIMED_OUT
+		runNING_TIMED_OUT:
+			## Late-arriving worker result drops back to idle; forced
+			## abandon-and-respawn drops back to runNING.
+			return to == idle or to == runNING
 	return false

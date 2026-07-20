@@ -444,7 +444,7 @@ func take_screenshot(params: Dictionary) -> Dictionary:
 				## same EDITOR_NOT_READY shape, not INVALID_PARAMS (the params
 				## were fine; the editor just isn't in the required state).
 				return ErrorCodes.make_not_ready(
-					ErrorCodes.SUB_EDITOR_GAME_NOT_RUNNING,
+					ErrorCodes.SUB_EDITOR_GAME_NOT_runNING,
 					"Game is not running — start the project first", false,
 					"Use source='viewport' for the editor viewport, or start the game with project_run and retry.")
 			## The game is always a separate OS process (embedded mode just
@@ -984,7 +984,7 @@ func game_eval(params: Dictionary) -> Dictionary:
 
 	if not EditorInterface.is_playing_scene():
 		return ErrorCodes.make_not_ready(
-			ErrorCodes.SUB_EDITOR_GAME_NOT_RUNNING,
+			ErrorCodes.SUB_EDITOR_GAME_NOT_runNING,
 			"Game is not running — start the project first", false,
 			"Start the game with project_run (or wait for the user to run it), then retry.")
 
@@ -1008,7 +1008,7 @@ func game_command(params: Dictionary) -> Dictionary:
 
 	if not EditorInterface.is_playing_scene():
 		return ErrorCodes.make_not_ready(
-			ErrorCodes.SUB_EDITOR_GAME_NOT_RUNNING,
+			ErrorCodes.SUB_EDITOR_GAME_NOT_runNING,
 			"Game is not running — start the project first", false,
 			"Start the game with project_run (or wait for the user to run it), then retry.")
 
