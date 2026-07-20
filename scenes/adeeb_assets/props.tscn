@@ -1,6 +1,11 @@
-[gd_scene format=4 uid="uid://f81de8b1bb7a45ae"]
-[ext_resource type="Texture2D" uid="uid://b04f6c909d6d4f92" path="res://assets/adeeb_assets/Props.png" id="1"]
+[gd_scene format=3 uid="uid://cscj84dlq3gam"]
 
-[node name="props" type="Node2D"]
-[node name="Sprite" type="Sprite2D" parent="."]
+[ext_resource type="Texture2D" uid="uid://dkiggtarcr8mb" path="res://assets/adeeb_assets/Props.png" id="1"]
+
+[node name="props" type="Node2D" unique_id=1675745988]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=141060207]
+position = Vector2(-3, -5)
 texture = ExtResource("1")
+region_enabled = true
+region_rect = Rect2(12, 17, 40, 32)

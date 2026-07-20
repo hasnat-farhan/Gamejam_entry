@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dwa07r76yn2ll" path="res://assets/imported_node_2d/Decorations For Layer 2/tile-B-08.png" id="8_0h7mo"]
 [ext_resource type="Texture2D" uid="uid://cv8kb5smu4kiy" path="res://assets/imported_node_2d/Free Assets/Gemini_Generated_Image_vycynmvycynmvycy-removebg-preview.png" id="9_4d7sh"]
 [ext_resource type="Texture2D" uid="uid://k055mkrxf8kt" path="res://assets/imported_node_2d/Decorations For Layer 2/tile-B-07.png" id="10_ir8iy"]
+[ext_resource type="Script" uid="uid://newlevelscript" path="res://scenes/levels/level.gd" id="11_newlvl"]
+[ext_resource type="PackedScene" uid="uid://newgamecamera" path="res://scenes/system/game_camera.tscn" id="12_gcambn"]
+[ext_resource type="PackedScene" uid="uid://newplayerinst" path="res://entities/player/player_instantiator.tscn" id="13_pinstn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
 texture = ExtResource("1_0e48y")
