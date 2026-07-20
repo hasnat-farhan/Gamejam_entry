@@ -1,14 +1,15 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene format=2]
 
-[ext_resource path="res://actors/player.gd" type="Script" id=1]
-[ext_resource path="res://assets/sprites/player_idle_1.png" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/player_idle_2.png" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/player_idle_3.png" type="Texture" id=4]
-[ext_resource path="res://assets/sprites/player_idle_4.png" type="Texture" id=5]
-[ext_resource path="res://assets/sprites/player_walk_1.png" type="Texture" id=6]
-[ext_resource path="res://assets/sprites/player_walk_2.png" type="Texture" id=7]
-[ext_resource path="res://assets/misc/light.png" type="Texture" id=8]
-[ext_resource path="res://assets/sfx/footstep.wav" type="AudioStream" id=9]
+[ext_resource type="Script" uid="uid://8ix1ycua70ho" path="res://actors/player.gd" id="1"]
+[ext_resource type="Texture" uid="uid://g3lwwl31bxrs" path="res://assets/sprites/player_idle_1.png" id="2"]
+[ext_resource type="Texture" uid="uid://ckbi0dus3yucq" path="res://assets/sprites/player_idle_2.png" id="3"]
+[ext_resource type="Texture" uid="uid://co1khldwoofef" path="res://assets/sprites/player_idle_3.png" id="4"]
+[ext_resource type="Texture" uid="uid://bbpopr52snn4j" path="res://assets/sprites/player_idle_4.png" id="5"]
+[ext_resource type="Texture" uid="uid://bcm5yxd2lahg6" path="res://assets/sprites/player_walk_1.png" id="6"]
+[ext_resource type="Texture" uid="uid://bikfefle6msli" path="res://assets/sprites/player_walk_2.png" id="7"]
+[ext_resource type="Texture" uid="uid://og2qbugwdx06" path="res://assets/misc/light.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://bxqeku0d0jfxh" path="res://sfx/footstep.wav" id="9"]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6, 5 )

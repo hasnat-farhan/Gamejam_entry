@@ -10,6 +10,7 @@ extends CharacterEntity
 var player_id: int = 1 ## A unique id that is assigned to the player on creation. Player 1 will have player_id = 1 and each additional player will have an incremental id, 2, 3, 4, and so on.
 var equipped = 0 ## The id of the weapon equipped by the player.
 var fireball_container: Node2D
+var _footstep_rng := RandomNumberGenerator.new()
 @export var fireball_projectile_scene: PackedScene = preload("res://fireball_node_adeeb/Projectiles/Projectile.tscn")
 
 func _ready():
@@ -141,6 +142,18 @@ func _get_attack_animation_name() -> String:
 	if direction.y > 0:
 		return "attack-down"
 	return "attack-up"
+
+func _on_AnimatedSprite2D_frame_changed():
+	var animated_sprite = $AnimatedSprite2D
+	if not animated_sprite:
+		return
+	var anim_name = animated_sprite.animation
+	if anim_name.begins_with("walk") or anim_name.begins_with("run"):
+		var footstep = $SfxFootstep
+		if footstep and not footstep.playing:
+			footstep.volume_db = _footstep_rng.randf_range(-12.0, 0.0)
+			footstep.pitch_scale = _footstep_rng.randf_range(0.8, 1.2)
+			footstep.play()
 
 func disable_entity(value: bool, delay = 0.0):
 	await get_tree().create_timer(delay).timeout

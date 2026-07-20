@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2depss4u6ddp"
+path="res://.godot/imported/2D music 2 main loop.ogg-76d2ba80c6aa850e32f21319b002dd2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://sfx/2D music 2 main loop.ogg"
+dest_files=["res://.godot/imported/2D music 2 main loop.ogg-76d2ba80c6aa850e32f21319b002dd2e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

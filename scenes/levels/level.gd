@@ -11,6 +11,8 @@ var player_id: int ## Used when moving between levels to save the player facing 
 
 func init_scene():
 	DataManager.load_level_data()
+	# Start background music when entering a level
+	Globals.start_music()
 
 ##internal - Used by SceneManager to pass data between levels.
 func get_data():
