@@ -26,8 +26,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	Health = PlayerData.Player_Health
-	attackpow = PlayerData.Player_Damage
 	
 	if Health <= 0:
 		Death()
@@ -59,27 +57,18 @@ func _physics_process(delta):
 	attack_combo()
 
 func attack_combo():
-	if PlayerData.Class == 1:
-		if Input.is_action_just_pressed("attack") and AtkNumber == 3:
-			is_attacking = true
-			AtkTimer.start()
-			animTree.get("parameters/playback").travel("Attack1")
-		if Input.is_action_just_pressed("attack") and AtkNumber == 2:
-			is_attacking = true
-			AtkTimer.start()
-			animTree.get("parameters/playback").travel("Attack2")
-		if Input.is_action_just_pressed("attack") and AtkNumber == 1:
-			is_attacking = true
-			AtkTimer.start()
-			animTree.get("parameters/playback").travel("Attack3")
-	else: # new---------------------------------------------------------------------------------------
-		if Input.is_action_just_pressed("attack") and is_attacking == false:
-			is_attacking = true
-			AtkTimer.start()
-			animTree.get("parameters/playback").travel("Cast")
-			var instance = Projectile
-			var spawn = instance.instantiate()
-			add_sibling(spawn)
+	if Input.is_action_just_pressed("attack") and AtkNumber == 3:
+		is_attacking = true
+		AtkTimer.start()
+		animTree.get("parameters/playback").travel("Attack1")
+	if Input.is_action_just_pressed("attack") and AtkNumber == 2:
+		is_attacking = true
+		AtkTimer.start()
+		animTree.get("parameters/playback").travel("Attack2")
+	if Input.is_action_just_pressed("attack") and AtkNumber == 1:
+		is_attacking = true
+		AtkTimer.start()
+		animTree.get("parameters/playback").travel("Attack3")
 
 func remove_atknumb():
 	AtkNumber -= 1

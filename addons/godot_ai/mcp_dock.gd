@@ -692,7 +692,7 @@ func _build_ui() -> void:
 	_clients_summary_label = Label.new()
 	_clients_summary_label.add_theme_color_override("font_color", COLOR_MUTED)
 	_clients_summary_label.clip_text = true
-	_clients_summary_label.text_overrun_behavior = TextServer.OVERrun_TRIM_ELLIPSIS
+	_clients_summary_label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	_clients_summary_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	clients_header_row.add_child(_clients_summary_label)
 
