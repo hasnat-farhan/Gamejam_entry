@@ -21,8 +21,12 @@ func _ready():
 	Globals.transfer_complete.connect(func(): on_transfer_end.enable())
 	Globals.destination_found.connect(func(destination_path): _move_to_destination(destination_path))
 	receive_data(DataManager.get_player_data(player_id))
+	
+	# Connect to health controller's hp_changed signal to detect player death
+	if health_controller:
+		health_controller.hp_changed.connect(_on_health_changed)
 
-##Get the player data to save.
+## Get the player data to save.
 func get_data():
 	var data = DataPlayer.new()
 	var player_data = DataManager.get_player_data(player_id)
@@ -39,7 +43,7 @@ func get_data():
 	data.equipped = equipped
 	return data
 
-##Handle the received player data (from a save file or when moving to another level).
+## Handle the received player data (from a save file or when moving to another level).
 func receive_data(data):
 	if data:
 		global_position = data.position
@@ -141,6 +145,21 @@ func _get_attack_animation_name() -> String:
 	if direction.y > 0:
 		return "attack-down"
 	return "attack-up"
+
+func _on_health_changed(new_hp: int):
+	"""Called when player's health changes. Triggers game over if HP reaches 0."""
+	if new_hp <= 0:
+		_trigger_game_over()
+
+func _trigger_game_over():
+	"""Show the game over screen."""
+	var current_level = Globals.get_current_level()
+	if current_level:
+		var path = current_level.scene_file_path
+		SceneManager.swap_scenes(path, get_tree().root, current_level)
+	else:
+		get_tree().reload_current_scene()
+	queue_free()
 
 func disable_entity(value: bool, delay = 0.0):
 	await get_tree().create_timer(delay).timeout
