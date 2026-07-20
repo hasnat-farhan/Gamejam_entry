@@ -31,7 +31,7 @@ Globals="*res://scripts/autoloads/Globals.gd"
 SceneManager="*res://scripts/autoloads/SceneManager.gd"
 DataManager="*res://scripts/autoloads/DataManager.gd"
 Debugger="*res://scripts/autoloads/debugger.gd"
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+DialogueManager="*uid://c3rodes2l3gxb"
 _mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 
 [dialogue_manager]
@@ -50,7 +50,7 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_ai/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_ai/plugin.cfg")
 
 [filesystem]
 
@@ -178,6 +178,7 @@ inventory={
 [internationalization]
 
 locale/translations=PackedStringArray("res://local/translations.en.tres", "res://local/translations.it.tres")
+locale/translations_pot_files=PackedStringArray("res://dialogues/commons.dialogue", "res://dialogues/start.dialogue")
 
 [layer_names]
 
