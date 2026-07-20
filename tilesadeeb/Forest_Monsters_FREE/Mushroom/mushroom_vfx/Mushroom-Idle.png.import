@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhp1hqbpon4j2"
-path="res://.godot/imported/Mushroom-Idle.png-c46066f150f117554d46c78124b954af.ctex"
+path="res://.godot/imported/Mushroom-Idle.png-c32d68649e44989a0769bbf80848f7fe.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://tilesadeeb/Forest_Monsters_FREE/Mushroom/mushroom_vfx/Mushroom-Idle.png"
-dest_files=["res://.godot/imported/Mushroom-Idle.png-c46066f150f117554d46c78124b954af.ctex"]
+dest_files=["res://.godot/imported/Mushroom-Idle.png-c32d68649e44989a0769bbf80848f7fe.ctex"]
 
 [params]
 

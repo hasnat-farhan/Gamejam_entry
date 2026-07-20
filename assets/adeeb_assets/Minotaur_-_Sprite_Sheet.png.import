@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g2fku4oqcdg6"
-path="res://.godot/imported/Minotaur_-_Sprite_Sheet.png-25bd9ada8c5ebecbcd5051a171499f1c.ctex"
+path="res://.godot/imported/Minotaur_-_Sprite_Sheet.png-f049c07cd307b6a88bcd54671de981cd.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/adeeb_assets/Minotaur_-_Sprite_Sheet.png"
-dest_files=["res://.godot/imported/Minotaur_-_Sprite_Sheet.png-25bd9ada8c5ebecbcd5051a171499f1c.ctex"]
+dest_files=["res://.godot/imported/Minotaur_-_Sprite_Sheet.png-f049c07cd307b6a88bcd54671de981cd.ctex"]
 
 [params]
 

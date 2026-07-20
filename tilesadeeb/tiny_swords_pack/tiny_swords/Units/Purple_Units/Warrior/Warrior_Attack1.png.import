@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyediwbf1pikd"
-path="res://.godot/imported/Warrior_Attack1.png-de70a83a31cc4a1286a6d8b3523ed132.ctex"
+path="res://.godot/imported/Warrior_Attack1.png-ef67640563bb7c51ef92b6dd56a4b00e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Purple Units/Warrior/Warrior_Attack1.png"
-dest_files=["res://.godot/imported/Warrior_Attack1.png-de70a83a31cc4a1286a6d8b3523ed132.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Units/Purple_Units/Warrior/Warrior_Attack1.png"
+dest_files=["res://.godot/imported/Warrior_Attack1.png-ef67640563bb7c51ef92b6dd56a4b00e.ctex"]
 
 [params]
 

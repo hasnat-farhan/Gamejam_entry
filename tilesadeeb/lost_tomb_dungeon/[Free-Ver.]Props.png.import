@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhavl2hk40vau"
-path="res://.godot/imported/[Free-Ver.]Props.png-d95cb0a95d199e81e70af5bf1fcb8470.ctex"
+path="res://.godot/imported/[Free-Ver.]Props.png-8286c949195e8a15070952be483fcc47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/[Free-Ver.]Props.png"
-dest_files=["res://.godot/imported/[Free-Ver.]Props.png-d95cb0a95d199e81e70af5bf1fcb8470.ctex"]
+source_file="res://tilesadeeb/lost_tomb_dungeon/[Free-Ver.]Props.png"
+dest_files=["res://.godot/imported/[Free-Ver.]Props.png-8286c949195e8a15070952be483fcc47.ctex"]
 
 [params]
 

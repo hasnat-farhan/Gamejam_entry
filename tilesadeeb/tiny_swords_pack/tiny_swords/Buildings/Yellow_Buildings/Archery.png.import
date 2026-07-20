@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfyg0mkawk4tt"
-path="res://.godot/imported/Archery.png-d2ec3c372c1b247cc076a7c9b1af7390.ctex"
+path="res://.godot/imported/Archery.png-ab7f2f90e67a2cef04aeed98bf1736e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Buildings/Yellow Buildings/Archery.png"
-dest_files=["res://.godot/imported/Archery.png-d2ec3c372c1b247cc076a7c9b1af7390.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Buildings/Yellow_Buildings/Archery.png"
+dest_files=["res://.godot/imported/Archery.png-ab7f2f90e67a2cef04aeed98bf1736e1.ctex"]
 
 [params]
 

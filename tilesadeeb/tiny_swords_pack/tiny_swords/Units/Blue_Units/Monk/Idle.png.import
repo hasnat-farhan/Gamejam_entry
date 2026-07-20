@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lniyqy0323ss"
-path="res://.godot/imported/Idle.png-dce0df46a2b49c072369f4ffb5b4aee1.ctex"
+path="res://.godot/imported/Idle.png-f38829adde8a0c77903e34fe9059d2d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Blue Units/Monk/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-dce0df46a2b49c072369f4ffb5b4aee1.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Units/Blue_Units/Monk/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-f38829adde8a0c77903e34fe9059d2d9.ctex"]
 
 [params]
 

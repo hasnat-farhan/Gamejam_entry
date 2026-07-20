@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tc4t1hpcglow"
-path="res://.godot/imported/spritesheet.png-69acfc389555cd2045f841e6bf97560b.ctex"
+path="res://.godot/imported/spritesheet.png-300e9d8de15ce535e72c660dd1172b46.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://tilesadeeb/isometric_tileset/spritesheet.png"
-dest_files=["res://.godot/imported/spritesheet.png-69acfc389555cd2045f841e6bf97560b.ctex"]
+dest_files=["res://.godot/imported/spritesheet.png-300e9d8de15ce535e72c660dd1172b46.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwim6xf6ukomq"
-path="res://.godot/imported/Mushroom-Stun.png-068cf79e28ace1dcddf2abe63e61de01.ctex"
+path="res://.godot/imported/Mushroom-Stun.png-7f200c415b03f660c4adc3a9a536cb02.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://tilesadeeb/Forest_Monsters_FREE/Mushroom/mushroom_novfx/Mushroom-Stun.png"
-dest_files=["res://.godot/imported/Mushroom-Stun.png-068cf79e28ace1dcddf2abe63e61de01.ctex"]
+dest_files=["res://.godot/imported/Mushroom-Stun.png-7f200c415b03f660c4adc3a9a536cb02.ctex"]
 
 [params]
 

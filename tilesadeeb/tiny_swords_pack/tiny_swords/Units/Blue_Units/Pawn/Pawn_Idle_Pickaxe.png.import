@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk5dky8vdqolq"
-path="res://.godot/imported/Pawn_Idle_Pickaxe.png-4ad60cf85eb1ec7890c6430a1fc04e3b.ctex"
+path="res://.godot/imported/Pawn_Idle_Pickaxe.png-13f238cf8e194a9958bd21479173f7dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Blue Units/Pawn/Pawn_Idle_Pickaxe.png"
-dest_files=["res://.godot/imported/Pawn_Idle_Pickaxe.png-4ad60cf85eb1ec7890c6430a1fc04e3b.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Units/Blue_Units/Pawn/Pawn_Idle_Pickaxe.png"
+dest_files=["res://.godot/imported/Pawn_Idle_Pickaxe.png-13f238cf8e194a9958bd21479173f7dc.ctex"]
 
 [params]
 

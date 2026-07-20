@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqhxmbuugunuj"
-path="res://.godot/imported/Mimic_Sprite_Sheet.png-3160b7b73e9690f097195c36dae21a34.ctex"
+path="res://.godot/imported/Mimic_Sprite_Sheet.png-57fd085e07c90c26c04a731377e7c973.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/adeeb_assets/Mimic_Sprite_Sheet.png"
-dest_files=["res://.godot/imported/Mimic_Sprite_Sheet.png-3160b7b73e9690f097195c36dae21a34.ctex"]
+dest_files=["res://.godot/imported/Mimic_Sprite_Sheet.png-57fd085e07c90c26c04a731377e7c973.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl011h1kjd0k6"
-path="res://.godot/imported/Tower.png-9efb3cd1fb68ef028229da0d72b86dff.ctex"
+path="res://.godot/imported/Tower.png-65930d191f48eb271602d252cf58c2aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Buildings/Purple Buildings/Tower.png"
-dest_files=["res://.godot/imported/Tower.png-9efb3cd1fb68ef028229da0d72b86dff.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Buildings/Purple_Buildings/Tower.png"
+dest_files=["res://.godot/imported/Tower.png-65930d191f48eb271602d252cf58c2aa.ctex"]
 
 [params]
 

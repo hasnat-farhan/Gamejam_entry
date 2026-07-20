@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctxfjpqxj5v76"
-path="res://.godot/imported/3._License.png-adc1584a0a02b717506ee45d9a49245c.ctex"
+path="res://.godot/imported/3._License.png-162a62241deee88234d79e921d71f9e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/[FREE] Mini Dungeon Tileset/3._License.png"
-dest_files=["res://.godot/imported/3._License.png-adc1584a0a02b717506ee45d9a49245c.ctex"]
+source_file="res://tilesadeeb/mini_dungeon_tileset/3._License.png"
+dest_files=["res://.godot/imported/3._License.png-162a62241deee88234d79e921d71f9e1.ctex"]
 
 [params]
 

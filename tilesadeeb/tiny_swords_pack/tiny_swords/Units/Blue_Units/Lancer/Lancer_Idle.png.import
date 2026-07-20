@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyukql1fy6bin"
-path="res://.godot/imported/Lancer_Idle.png-a4c30904d739492ba02e287d8d11d994.ctex"
+path="res://.godot/imported/Lancer_Idle.png-5e6f063609efa8f3f20766cf1d5e4748.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Blue Units/Lancer/Lancer_Idle.png"
-dest_files=["res://.godot/imported/Lancer_Idle.png-a4c30904d739492ba02e287d8d11d994.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Units/Blue_Units/Lancer/Lancer_Idle.png"
+dest_files=["res://.godot/imported/Lancer_Idle.png-5e6f063609efa8f3f20766cf1d5e4748.ctex"]
 
 [params]
 

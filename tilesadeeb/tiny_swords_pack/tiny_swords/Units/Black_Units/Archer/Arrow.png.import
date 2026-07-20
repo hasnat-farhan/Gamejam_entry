@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpdwgl5o0wllf"
-path="res://.godot/imported/Arrow.png-57c7712c343e594fa0076c809bed7dd3.ctex"
+path="res://.godot/imported/Arrow.png-84d008e778e5ea660fe402cbf6e87705.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Black Units/Archer/Arrow.png"
-dest_files=["res://.godot/imported/Arrow.png-57c7712c343e594fa0076c809bed7dd3.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Units/Black_Units/Archer/Arrow.png"
+dest_files=["res://.godot/imported/Arrow.png-84d008e778e5ea660fe402cbf6e87705.ctex"]
 
 [params]
 

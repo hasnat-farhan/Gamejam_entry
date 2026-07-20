@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q4pkdlhwbpme"
-path="res://.godot/imported/Rock1.png-0e29646246f1185df236ffd621e4d60a.ctex"
+path="res://.godot/imported/Rock1.png-4d03159788ffa78af757f72010aa97c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Terrain/Decorations/Rocks/Rock1.png"
-dest_files=["res://.godot/imported/Rock1.png-0e29646246f1185df236ffd621e4d60a.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Terrain/Decorations/Rocks/Rock1.png"
+dest_files=["res://.godot/imported/Rock1.png-4d03159788ffa78af757f72010aa97c9.ctex"]
 
 [params]
 

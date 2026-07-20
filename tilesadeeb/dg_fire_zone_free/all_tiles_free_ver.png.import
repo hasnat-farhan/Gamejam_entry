@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t8tfw1g225v2"
-path="res://.godot/imported/all_tiles_free_ver.png-2e384e7a0f4e98a73df8a04e62c2dba4.ctex"
+path="res://.godot/imported/all_tiles_free_ver.png-68604c41ba3bacad8eab55a3abf1c677.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://tilesadeeb/dg_fire_zone_free/all_tiles_free_ver.png"
-dest_files=["res://.godot/imported/all_tiles_free_ver.png-2e384e7a0f4e98a73df8a04e62c2dba4.ctex"]
+dest_files=["res://.godot/imported/all_tiles_free_ver.png-68604c41ba3bacad8eab55a3abf1c677.ctex"]
 
 [params]
 

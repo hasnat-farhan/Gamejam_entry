@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0helwd6llmbh"
-path="res://.godot/imported/Fire_and_Water.png-a48b26180aa41193db1ac795216a63f9.ctex"
+path="res://.godot/imported/Fire_and_Water.png-706b2fac5c00dcc30f86b5c8b0d0125e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/Raven Fantasy - Pixel Art Tileset - Green Forest v2/RPG Maker MV and MZ/Fire_and_Water.png"
-dest_files=["res://.godot/imported/Fire_and_Water.png-a48b26180aa41193db1ac795216a63f9.ctex"]
+source_file="res://tilesadeeb/raven_fantasy_forest/RPG_Maker_MV_and_MZ/Fire_and_Water.png"
+dest_files=["res://.godot/imported/Fire_and_Water.png-706b2fac5c00dcc30f86b5c8b0d0125e.ctex"]
 
 [params]
 

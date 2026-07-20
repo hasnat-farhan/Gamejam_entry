@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3pgy341sgbjf"
-path="res://.godot/imported/attack1_up.png-e0039685ebe06b655de89dd6be849b8e.ctex"
+path="res://.godot/imported/attack1_up.png-004140c3515c2b568e1e55d0652fd644.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://new_assets_adeeb/FREE_Adventurer 2D Pixel Art/Sprites/attack1/attack1_up.png"
-dest_files=["res://.godot/imported/attack1_up.png-e0039685ebe06b655de89dd6be849b8e.ctex"]
+source_file="res://new_assets_adeeb/FREE_Adventurer_2D_Pixel_Art/Sprites/attack1/attack1_up.png"
+dest_files=["res://.godot/imported/attack1_up.png-004140c3515c2b568e1e55d0652fd644.ctex"]
 
 [params]
 

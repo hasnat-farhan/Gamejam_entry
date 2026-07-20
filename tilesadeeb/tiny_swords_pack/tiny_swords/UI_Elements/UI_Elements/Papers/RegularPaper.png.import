@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnl07367hwlbi"
-path="res://.godot/imported/RegularPaper.png-62c845f256f3c312f8ec2721a8a5cb53.ctex"
+path="res://.godot/imported/RegularPaper.png-04c3635924ab3bfe49babdb091769b8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/UI Elements/UI Elements/Papers/RegularPaper.png"
-dest_files=["res://.godot/imported/RegularPaper.png-62c845f256f3c312f8ec2721a8a5cb53.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/UI_Elements/UI_Elements/Papers/RegularPaper.png"
+dest_files=["res://.godot/imported/RegularPaper.png-04c3635924ab3bfe49babdb091769b8a.ctex"]
 
 [params]
 

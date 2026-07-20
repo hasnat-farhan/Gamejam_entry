@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce0juf7jplpw7"
-path="res://.godot/imported/House1.png-9028d62cbeff0db6e97e7cea290075f3.ctex"
+path="res://.godot/imported/House1.png-81980cb6242de7ff71df44939b07c748.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Buildings/Black Buildings/House1.png"
-dest_files=["res://.godot/imported/House1.png-9028d62cbeff0db6e97e7cea290075f3.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Buildings/Black_Buildings/House1.png"
+dest_files=["res://.godot/imported/House1.png-81980cb6242de7ff71df44939b07c748.ctex"]
 
 [params]
 

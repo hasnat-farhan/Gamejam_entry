@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0m1q04b1wwvd"
-path="res://.godot/imported/Lancer_Right_Defence.png-f37ce22f7085b2c43331cad7d85fc75a.ctex"
+path="res://.godot/imported/Lancer_Right_Defence.png-f4668e16cfd8da3a301ba9ed3dc7959d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Red Units/Lancer/Lancer_Right_Defence.png"
-dest_files=["res://.godot/imported/Lancer_Right_Defence.png-f37ce22f7085b2c43331cad7d85fc75a.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords/Units/Red_Units/Lancer/Lancer_Right_Defence.png"
+dest_files=["res://.godot/imported/Lancer_Right_Defence.png-f4668e16cfd8da3a301ba9ed3dc7959d.ctex"]
 
 [params]
 
