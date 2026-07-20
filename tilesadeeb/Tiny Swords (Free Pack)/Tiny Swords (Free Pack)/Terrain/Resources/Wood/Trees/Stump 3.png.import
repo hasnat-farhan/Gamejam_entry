@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mjx7qtv6u5lw"
-path="res://.godot/imported/Stump 3.png-74422b5b52c2a071dd81ac5466ddfb39.ctex"
+path="res://.godot/imported/Stump 3.png-4333343b2e4c86bbd15c4581342cb892.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Stump 3.png"
-dest_files=["res://.godot/imported/Stump 3.png-74422b5b52c2a071dd81ac5466ddfb39.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Stump 3.png"
+dest_files=["res://.godot/imported/Stump 3.png-4333343b2e4c86bbd15c4581342cb892.ctex"]
 
 [params]
 

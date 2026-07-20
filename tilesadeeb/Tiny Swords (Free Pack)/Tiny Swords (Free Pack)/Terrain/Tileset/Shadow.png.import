@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dweteynveaofd"
-path="res://.godot/imported/Shadow.png-f88994be0cbf13488827ae09cf944c3f.ctex"
+path="res://.godot/imported/Shadow.png-f52d9a566c031569b25fee889868a293.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Tileset/Shadow.png"
-dest_files=["res://.godot/imported/Shadow.png-f88994be0cbf13488827ae09cf944c3f.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Tileset/Shadow.png"
+dest_files=["res://.godot/imported/Shadow.png-f52d9a566c031569b25fee889868a293.ctex"]
 
 [params]
 

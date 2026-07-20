@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q2xgthn3hnyu"
-path="res://.godot/imported/[Free-Ver.]Tiles.png-0fb82a0053278c530ea77e3230c01422.ctex"
+path="res://.godot/imported/[Free-Ver.]Tiles.png-fe27880a844b06412a9d78e2da1913ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/[Free-Ver.]Tiles.png"
-dest_files=["res://.godot/imported/[Free-Ver.]Tiles.png-0fb82a0053278c530ea77e3230c01422.ctex"]
+source_file="res://tilesadeeb/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/[Free-Ver.]Tiles.png"
+dest_files=["res://.godot/imported/[Free-Ver.]Tiles.png-fe27880a844b06412a9d78e2da1913ff.ctex"]
 
 [params]
 

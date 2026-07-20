@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://durxcmqisnoeu"
-path="res://.godot/imported/SmallRibbons.png-12d2818429ec497e7bf352ca09f977fb.ctex"
+path="res://.godot/imported/SmallRibbons.png-6182df689a0be283d1102da54fcf4f75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Ribbons/SmallRibbons.png"
-dest_files=["res://.godot/imported/SmallRibbons.png-12d2818429ec497e7bf352ca09f977fb.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Ribbons/SmallRibbons.png"
+dest_files=["res://.godot/imported/SmallRibbons.png-6182df689a0be283d1102da54fcf4f75.ctex"]
 
 [params]
 

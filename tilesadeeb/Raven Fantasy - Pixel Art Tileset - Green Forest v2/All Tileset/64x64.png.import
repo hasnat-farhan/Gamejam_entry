@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy37u5db1naf3"
-path="res://.godot/imported/64x64.png-8f7121d788acdb012def3ff8a0cc3de7.ctex"
+path="res://.godot/imported/64x64.png-7dcd26aadf0af2288d9b86211fddae39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Raven Fantasy - Pixel Art Tileset - Green Forest v2/All Tileset/64x64.png"
-dest_files=["res://.godot/imported/64x64.png-8f7121d788acdb012def3ff8a0cc3de7.ctex"]
+source_file="res://tilesadeeb/Raven Fantasy - Pixel Art Tileset - Green Forest v2/All Tileset/64x64.png"
+dest_files=["res://.godot/imported/64x64.png-7dcd26aadf0af2288d9b86211fddae39.ctex"]
 
 [params]
 

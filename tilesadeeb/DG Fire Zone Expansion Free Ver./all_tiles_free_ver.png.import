@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t8tfw1g225v2"
-path="res://.godot/imported/All Tiles Free Ver..png-b214396da2ed6021d91f3986406bf73b.ctex"
+path="res://.godot/imported/all_tiles_free_ver.png-2e384e7a0f4e98a73df8a04e62c2dba4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/DG Fire Zone Expansion Free Ver./All Tiles Free Ver..png"
-dest_files=["res://.godot/imported/All Tiles Free Ver..png-b214396da2ed6021d91f3986406bf73b.ctex"]
+source_file="res://tilesadeeb/DG Fire Zone Expansion Free Ver./all_tiles_free_ver.png"
+dest_files=["res://.godot/imported/all_tiles_free_ver.png-2e384e7a0f4e98a73df8a04e62c2dba4.ctex"]
 
 [params]
 

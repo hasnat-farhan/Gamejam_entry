@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccfl3ikqg1eg8"
-path="res://.godot/imported/Pawn_Interact Hammer.png-0b0462b96b59e4d7ceadcf0dfa3266d5.ctex"
+path="res://.godot/imported/Pawn_Interact Hammer.png-eaa6a41fe305b6cb0a165a8a4546956e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Purple Units/Pawn/Pawn_Interact Hammer.png"
-dest_files=["res://.godot/imported/Pawn_Interact Hammer.png-0b0462b96b59e4d7ceadcf0dfa3266d5.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Purple Units/Pawn/Pawn_Interact Hammer.png"
+dest_files=["res://.godot/imported/Pawn_Interact Hammer.png-eaa6a41fe305b6cb0a165a8a4546956e.ctex"]
 
 [params]
 

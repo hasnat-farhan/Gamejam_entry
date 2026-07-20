@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://owcesftw12dk"
-path="res://.godot/imported/Pawn_Run Gold.png-2466b0860ef399b64c664a2f5c30000a.ctex"
+path="res://.godot/imported/Pawn_Run Gold.png-3724ea326b418e67ea422386c78693be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Black Units/Pawn/Pawn_Run Gold.png"
-dest_files=["res://.godot/imported/Pawn_Run Gold.png-2466b0860ef399b64c664a2f5c30000a.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Black Units/Pawn/Pawn_Run Gold.png"
+dest_files=["res://.godot/imported/Pawn_Run Gold.png-3724ea326b418e67ea422386c78693be.ctex"]
 
 [params]
 

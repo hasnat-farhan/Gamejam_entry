@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdb4uvpu7v4pe"
-path="res://.godot/imported/Heal.png-757f3f120d3c7ee25d4295da37e17e49.ctex"
+path="res://.godot/imported/Heal.png-cbd21aa1f44b15b584f56aca14f61825.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Purple Units/Monk/Heal.png"
-dest_files=["res://.godot/imported/Heal.png-757f3f120d3c7ee25d4295da37e17e49.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Purple Units/Monk/Heal.png"
+dest_files=["res://.godot/imported/Heal.png-cbd21aa1f44b15b584f56aca14f61825.ctex"]
 
 [params]
 

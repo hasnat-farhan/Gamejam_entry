@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rs8j1o5ahp3d"
-path="res://.godot/imported/Trap-Spikes-Floor.png-2aab2bc68f510a0dc6b0de6ae5b59169.ctex"
+path="res://.godot/imported/Trap-Spikes-Floor.png-50c9e0e252bd19df6595758318146b1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/Trap-Spikes-Floor.png"
-dest_files=["res://.godot/imported/Trap-Spikes-Floor.png-2aab2bc68f510a0dc6b0de6ae5b59169.ctex"]
+source_file="res://tilesadeeb/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/Trap-Spikes-Floor.png"
+dest_files=["res://.godot/imported/Trap-Spikes-Floor.png-50c9e0e252bd19df6595758318146b1f.ctex"]
 
 [params]
 

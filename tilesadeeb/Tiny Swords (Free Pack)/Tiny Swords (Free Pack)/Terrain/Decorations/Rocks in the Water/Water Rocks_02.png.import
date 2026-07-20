@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc4qqlj3rlowl"
-path="res://.godot/imported/Water Rocks_02.png-de7926e929fa8ace8377779c43f2cf7c.ctex"
+path="res://.godot/imported/Water Rocks_02.png-a1e2eea422085e7a67e23ff3c151a829.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png"
-dest_files=["res://.godot/imported/Water Rocks_02.png-de7926e929fa8ace8377779c43f2cf7c.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png"
+dest_files=["res://.godot/imported/Water Rocks_02.png-a1e2eea422085e7a67e23ff3c151a829.ctex"]
 
 [params]
 

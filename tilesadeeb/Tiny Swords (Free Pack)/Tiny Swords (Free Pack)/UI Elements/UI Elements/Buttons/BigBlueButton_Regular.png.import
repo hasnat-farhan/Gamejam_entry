@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bduhumpgcw6n"
-path="res://.godot/imported/BigBlueButton_Regular.png-99a35e04bdd904ecf9458f2ed87125c0.ctex"
+path="res://.godot/imported/BigBlueButton_Regular.png-159f907a5bbe6279ae11850b1cb74cc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Buttons/BigBlueButton_Regular.png"
-dest_files=["res://.godot/imported/BigBlueButton_Regular.png-99a35e04bdd904ecf9458f2ed87125c0.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Buttons/BigBlueButton_Regular.png"
+dest_files=["res://.godot/imported/BigBlueButton_Regular.png-159f907a5bbe6279ae11850b1cb74cc5.ctex"]
 
 [params]
 

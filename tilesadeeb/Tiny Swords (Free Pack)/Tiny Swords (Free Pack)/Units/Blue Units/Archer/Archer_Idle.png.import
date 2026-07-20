@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsj06wdql0e2i"
-path="res://.godot/imported/Archer_Idle.png-7004f5f4524b5839bf45b85abc9c950c.ctex"
+path="res://.godot/imported/Archer_Idle.png-9c11e4e8ba95ed62aef273f6432cd4e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Archer/Archer_Idle.png"
-dest_files=["res://.godot/imported/Archer_Idle.png-7004f5f4524b5839bf45b85abc9c950c.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Archer/Archer_Idle.png"
+dest_files=["res://.godot/imported/Archer_Idle.png-9c11e4e8ba95ed62aef273f6432cd4e0.ctex"]
 
 [params]
 

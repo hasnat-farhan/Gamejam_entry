@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4p7pqqdrksxs"
-path="res://.godot/imported/House3.png-1c18d9ecc8e28e81bd6ba06ae3269389.ctex"
+path="res://.godot/imported/House3.png-8526588a100db9bb45452a8e127b7b49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles and shit adeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Buildings/Purple Buildings/House3.png"
-dest_files=["res://.godot/imported/House3.png-1c18d9ecc8e28e81bd6ba06ae3269389.ctex"]
+source_file="res://tilesadeeb/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Buildings/Purple Buildings/House3.png"
+dest_files=["res://.godot/imported/House3.png-8526588a100db9bb45452a8e127b7b49.ctex"]
 
 [params]
 
