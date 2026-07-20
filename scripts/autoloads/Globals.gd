@@ -8,6 +8,11 @@ var user_prefs: UserPrefs
 var settings_menu_scene: PackedScene = preload("res://scenes/menus/settings_menu.tscn")
 var settings_menu = null
 
+# Background music
+@onready var _music_player: AudioStreamPlayer = AudioStreamPlayer.new()
+const MUSIC_STREAM: AudioStream = preload("res://sfx/2D music 2 main loop.ogg")
+const MUSIC_DB: float = -6.0
+
 @warning_ignore("unused_signal")
 signal transfer_start
 @warning_ignore("unused_signal")
@@ -25,6 +30,25 @@ func _ready():
 	AudioServer.set_bus_mute(SFX_BUS_ID, user_prefs.sfx_volume < .05)
 	AudioServer.set_bus_volume_db(MUSIC_BUS_ID, linear_to_db(user_prefs.music_volume))
 	AudioServer.set_bus_mute(MUSIC_BUS_ID, user_prefs.music_volume < .05)
+	
+	# Set up the background music player
+	_music_player.stream = MUSIC_STREAM
+	_music_player.bus = "Music"
+	_music_player.volume_db = MUSIC_DB
+	add_child(_music_player)
+	
+	# Start music when we leave the start screen and enter gameplay
+	# (music will be explicitly started by levels)
+
+## Start playing background music.
+func start_music():
+	if not _music_player.playing:
+		_music_player.play()
+
+## Stop playing background music.
+func stop_music():
+	if _music_player.playing:
+		_music_player.stop()
 
 func get_selected_language() -> String:
 	var s: String = user_prefs.language

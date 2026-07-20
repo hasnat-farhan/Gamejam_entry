@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://by4rtmup1m1ai" path="res://new_assets_adeeb/FREE_Adventurer 2D Pixel Art/Sprites/idle/idle_right.png" id="15_bwdx1"]
 [ext_resource type="PackedScene" uid="uid://05uhe60taf6a" path="res://components/inventory.tscn" id="15_gx6sm"]
 [ext_resource type="Texture2D" uid="uid://cki6ffdremimt" path="res://new_assets_adeeb/FREE_Adventurer 2D Pixel Art/Sprites/idle/idle_up.png" id="16_vewsg"]
+[ext_resource type="AudioStream" uid="uid://bxqeku0d0jfxh" path="res://sfx/footstep.wav" id="17_ftstp"]
 [ext_resource type="Texture2D" uid="uid://ljjsml86ib5l" path="res://new_assets_adeeb/FREE_Adventurer 2D Pixel Art/Sprites/run/run_down.png" id="17_2soq1"]
 [ext_resource type="Texture2D" uid="uid://cwgabqe6id1ak" path="res://new_assets_adeeb/FREE_Adventurer 2D Pixel Art/Sprites/run/run_left.png" id="18_8q4fm"]
 [ext_resource type="Texture2D" uid="uid://dq4flliqd60mn" path="res://new_assets_adeeb/FREE_Adventurer 2D Pixel Art/Sprites/run/run_right.png" id="19_np63p"]
@@ -1225,9 +1226,16 @@ collision_layer = 16
 position = Vector2(8, 0)
 disabled = true
 
+[node name="SfxFootstep" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_ftstp")
+bus = &"SFX"
+volume_db = -6.0
+
 [node name="HurtBox" parent="." index="13" unique_id=1240273397 node_paths=PackedStringArray("health_controller")]
 collision_mask = 96
 health_controller = NodePath("../HealthController")
 
 [node name="CollisionShape2D" parent="HurtBox" index="0" unique_id=398080308]
 disabled = false
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_AnimatedSprite2D_frame_changed"]
