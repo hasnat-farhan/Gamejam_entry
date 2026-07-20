@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuix2dneekpfa"
-path="res://.godot/imported/Pawn_Run Hammer.png-a00388500f77a4a31b56d84a843324d1.ctex"
+path="res://.godot/imported/Pawn_Run_Hammer.png-a00388500f77a4a31b56d84a843324d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Purple Units/Pawn/Pawn_Run Hammer.png"
-dest_files=["res://.godot/imported/Pawn_Run Hammer.png-a00388500f77a4a31b56d84a843324d1.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Purple Units/Pawn/Pawn_Run_Hammer.png"
+dest_files=["res://.godot/imported/Pawn_Run_Hammer.png-a00388500f77a4a31b56d84a843324d1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://desdw43s6hgcb"
-path="res://.godot/imported/Water Foam.png-1f0aa86d41e8c11e1eccc6b11d6e60ce.ctex"
+path="res://.godot/imported/Water_Foam.png-1f0aa86d41e8c11e1eccc6b11d6e60ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Terrain/Tileset/Water Foam.png"
-dest_files=["res://.godot/imported/Water Foam.png-1f0aa86d41e8c11e1eccc6b11d6e60ce.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Terrain/Tileset/Water_Foam.png"
+dest_files=["res://.godot/imported/Water_Foam.png-1f0aa86d41e8c11e1eccc6b11d6e60ce.ctex"]
 
 [params]
 

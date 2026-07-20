@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpijpdwrlv2nk"
-path="res://.godot/imported/Meat Resource.png-a7d2a8acb69305748531461c6acb93fc.ctex"
+path="res://.godot/imported/Meat_Resource.png-a7d2a8acb69305748531461c6acb93fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Terrain/Resources/Meat/Meat Resource/Meat Resource.png"
-dest_files=["res://.godot/imported/Meat Resource.png-a7d2a8acb69305748531461c6acb93fc.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Terrain/Resources/Meat/Meat Resource/Meat_Resource.png"
+dest_files=["res://.godot/imported/Meat_Resource.png-a7d2a8acb69305748531461c6acb93fc.ctex"]
 
 [params]
 

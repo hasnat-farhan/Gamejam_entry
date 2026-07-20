@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wjllbxsju2sm"
-path="res://.godot/imported/Pawn_Interact Axe.png-ed33c9d17af367a9e9681bb22fedcc99.ctex"
+path="res://.godot/imported/Pawn_Interact_Axe.png-ed33c9d17af367a9e9681bb22fedcc99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Red Units/Pawn/Pawn_Interact Axe.png"
-dest_files=["res://.godot/imported/Pawn_Interact Axe.png-ed33c9d17af367a9e9681bb22fedcc99.ctex"]
+source_file="res://tilesadeeb/tiny_swords_pack/tiny_swords_pack/Units/Red Units/Pawn/Pawn_Interact_Axe.png"
+dest_files=["res://.godot/imported/Pawn_Interact_Axe.png-ed33c9d17af367a9e9681bb22fedcc99.ctex"]
 
 [params]
 
